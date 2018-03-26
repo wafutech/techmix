@@ -1,0 +1,37 @@
+<nav class="navbar navbar-fixed-top navbar-light navbar-expand-sm bg-info navbar-dark">
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+   <ul class="navbar-nav  ml-auto">
+   	<li class="nav-item">
+      <a class="nav-link" href="{{ 'home'|page }}">Main Site</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><span class="glyphicon glyphicon-user"></span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><span class="glyphicon glyphicon-bell"></span></a>
+    </li>
+    
+</ul>
+
+</nav>
+<!--Tabs-->
+
+<ul class="nav nav-tabs nav-justified">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Timeline</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">New Articles</a>
+  </li>
+  <li class="nav-item {% if( this.page.id == 'posts') %}active {% endif %}">
+    <a class="nav-link" href="{{ 'freelancer/findwork'|page }}">Jobs</a>
+  </li>
+  
+  </ul>
+

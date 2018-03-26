@@ -1,0 +1,23 @@
+title = "Category"
+url = "/category/:slug|^[a-zA-Z0-9]$"
+layout = "default"
+description = "Show Category"
+is_hidden = 0
+==
+use RainLab\Blog\Models\Post;
+use RainLab\Blog\Models\Category;
+
+function onStart(){
+    $slug = $this->param('slug');
+
+    $this['category'] = Category::where('slug', '=', $slug)->first();
+
+    if( $this['category'] ){
+        $post = new Post;
+        $query = $post->isPublished()
+                    ->orderBy('published_at', 'desc')
+                    ->with('categories');
+        $this['posts'] = $post->scopeFilterCategories($query, [ $this['category']->id ])->get();
+    }
+}
+==

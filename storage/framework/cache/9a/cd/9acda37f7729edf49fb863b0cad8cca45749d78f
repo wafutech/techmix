@@ -1,0 +1,159 @@
+1522052056a:1:{s:21:"timeline/timeline.htm";a:10:{s:8:"fileName";s:21:"timeline/timeline.htm";s:7:"content";s:2300:"title = "TechMix"
+url = "/updates"
+layout = "timeline"
+description = "The about page"
+is_hidden = 0
+==
+<div class="row">
+	<div class="col-sm-2 timeline-left-pane float-left bg-info">
+		
+		<div class="page-header">
+        <h4>User name and Image</h4>
+    </div>
+	<hr>
+	<h4>Teams</h4>
+	<ul>
+	<li class="list-group-item">Team 1</li>
+  <li class="list-group-item">Team 2</li>
+  <li class="list-group-item">Team 3</li>
+  <li class="list-group-item">Team 4</li>
+	</ul>
+	<p><span class="badge badge-primary">Create New Team</span></p>
+
+	<h4>Your Projects</h4>
+	<ul>
+		<li>Project 1</li>
+		<li>Project 2</li>
+		<li>Project 3</li>
+		<a href="#">More</a>
+	</div>
+	<div class="col-sm-6 ">
+		<div class="mx-auto">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div class="panel-title">
+
+	<ul class="nav nav-tabs nav-justified">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Make Post</a>
+  </li>
+    <li class="nav-item {% if( this.page.id == 'posts') %}active {% endif %}">
+    <a class="nav-link" href="{{ 'freelancer/findwork'|page }}"> Photo/Video</a>
+  </li>
+  
+  </ul>
+				</div>
+			</div>
+			<div class="panel-body">
+				<p><form class="form-inline" data-request="onPost" data-request-update="timeline/showpost: '#timeline-post'">
+				<p><textarea class="form-control" cols="40" rows="5" name="post" placeholder="Share Something"></textarea></p>
+				<button type="submit" class="btn btn btn-success float-right" data-attach-loading>Post </button>
+			</form>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="col-sm-4 timeline-right-pane">
+		<div class="row">
+			<div class="col-sm-8 featured">
+				<div class="page-header">
+				<h3>Featured</h3>
+			</div>
+			<h4>Developers</h4>
+			<p>developer avatar, name and link to profile</p>
+			<h4>Questions</h4>
+			<p>List of top 5 questions</p>
+			<h4>Articles</h4>
+			<p>List of top five questions</p>
+			<h4>Teams</h4>
+			<p>List of top 5 teams</p>
+
+			<div class="jumbotron">
+				<h2>Advert</h2>
+				<p>Some advert content goes here</p>
+			</div>
+		</div>
+			<div class="col-sm-4 developers-online">
+				<aside>List of users online whom you follow or follows you. You can get into chat room.</aside>
+			</div>
+		</div>
+	</div>
+</div>";s:5:"mtime";i:1521739317;s:6:"markup";s:2191:"<div class="row">
+	<div class="col-sm-2 timeline-left-pane float-left bg-info">
+		
+		<div class="page-header">
+        <h4>User name and Image</h4>
+    </div>
+	<hr>
+	<h4>Teams</h4>
+	<ul>
+	<li class="list-group-item">Team 1</li>
+  <li class="list-group-item">Team 2</li>
+  <li class="list-group-item">Team 3</li>
+  <li class="list-group-item">Team 4</li>
+	</ul>
+	<p><span class="badge badge-primary">Create New Team</span></p>
+
+	<h4>Your Projects</h4>
+	<ul>
+		<li>Project 1</li>
+		<li>Project 2</li>
+		<li>Project 3</li>
+		<a href="#">More</a>
+	</div>
+	<div class="col-sm-6 ">
+		<div class="mx-auto">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div class="panel-title">
+
+	<ul class="nav nav-tabs nav-justified">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Make Post</a>
+  </li>
+    <li class="nav-item {% if( this.page.id == 'posts') %}active {% endif %}">
+    <a class="nav-link" href="{{ 'freelancer/findwork'|page }}"> Photo/Video</a>
+  </li>
+  
+  </ul>
+				</div>
+			</div>
+			<div class="panel-body">
+				<p><form class="form-inline" data-request="onPost" data-request-update="timeline/showpost: '#timeline-post'">
+				<p><textarea class="form-control" cols="40" rows="5" name="post" placeholder="Share Something"></textarea></p>
+				<button type="submit" class="btn btn btn-success float-right" data-attach-loading>Post </button>
+			</form>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="col-sm-4 timeline-right-pane">
+		<div class="row">
+			<div class="col-sm-8 featured">
+				<div class="page-header">
+				<h3>Featured</h3>
+			</div>
+			<h4>Developers</h4>
+			<p>developer avatar, name and link to profile</p>
+			<h4>Questions</h4>
+			<p>List of top 5 questions</p>
+			<h4>Articles</h4>
+			<p>List of top five questions</p>
+			<h4>Teams</h4>
+			<p>List of top 5 teams</p>
+
+			<div class="jumbotron">
+				<h2>Advert</h2>
+				<p>Some advert content goes here</p>
+			</div>
+		</div>
+			<div class="col-sm-4 developers-online">
+				<aside>List of users online whom you follow or follows you. You can get into chat room.</aside>
+			</div>
+		</div>
+	</div>
+</div>";s:4:"code";N;s:5:"title";s:7:"TechMix";s:3:"url";s:8:"/updates";s:6:"layout";s:8:"timeline";s:11:"description";s:14:"The about page";s:9:"is_hidden";s:1:"0";}}

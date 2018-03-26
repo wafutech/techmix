@@ -1,0 +1,20 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table wafutech_technologies_'
+    - builder_table_create_wafutech_technologies_.php
+1.0.3:
+    - 'Created table wafutech_technologies_technologycategories_'
+    - builder_table_create_wafutech_technologies_technologycategories_.php
+1.0.4:
+    - 'Updated table wafutech_technologies_'
+    - builder_table_update_wafutech_technologies_technologies.php
+1.0.5:
+    - 'Created table wafutech_technologies_user_sub_technologies'
+    - builder_table_create_wafutech_technologies_user_sub_technologies.php
+1.0.6:
+    - 'Created table wafutech_technologies_tech_sub_categories'
+    - builder_table_create_wafutech_technologies_tech_sub_categories.php
+1.0.7:
+    - 'Created table wafutech_technologies_user_technologies'
+    - builder_table_create_wafutech_technologies_user_technologies.php

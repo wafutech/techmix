@@ -1,0 +1,11 @@
+1.0.1:
+    - 'Initialize plugin.'
+    - create_question_categories_table.php
+    - create_questions_table.php
+    - create_answers_table.php
+    - create_useful_answers_table
+    - 'modified last table migration'
+    - 'Changed stackexchange tables namespace from Questions to Stackexchange'
+1.0.2:
+    - 'Created table wafutech_stackexchange_useful_answers'
+    - builder_table_create_wafutech_stackexchange_useful_answers.php

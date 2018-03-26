@@ -1,0 +1,164 @@
+1522052058a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:1944:"==
+<div id="footer">
+	<script src="{{ [
+      'assets/javascript/jquery.js',
+    'assets/javascript/bootstrap.min.js',
+    'assets/javascript/clean-blog.min.js']|theme }}"></script>
+{% scripts %}
+</body>
+</html>
+    <div class="container footer-top">
+    	<div class="">
+        <hr />
+        <div class="row">
+        	<div class="col-md-2">
+        		<a href="#">Home</a>
+        	</div>
+        	<div class="col-md-2">
+           <a href="#">About</a>
+
+        	</div>
+		<div class="col-md-2">
+		   <a href="#">Contact</a>
+
+		        	</div>
+		<div class="col-md-2">
+		  <a href="#">Tearms & Conditions</a>
+        	</div>
+        <div class="col-md-2">
+		  <a href="#">Join</a>
+        	</div>
+
+        </div>
+        <div class="row">
+        	<div class="col-md-2">
+        		<a href="#">Blog</a>
+        	</div>
+        	<div class="col-md-2">
+           <a href="#">Freelancing</a>
+
+        	</div>
+		<div class="col-md-2">
+		   <a href="#">Store Room</a>
+
+		        	</div>
+		<div class="col-md-2">
+		  <a href="#">Questions</a>
+        	</div>
+        <div class="col-md-2">
+		  <a href="#">Courses</a>
+        	</div>
+
+        </div>
+        <div class="row">
+        	<div class="col-md-2">
+        		<a href="#">Top Programmers</a>
+        	</div>
+        	<div class="col-md-2">
+           <a href="#">Top Bloggers</a>
+
+        	</div>
+		<div class="col-md-2">
+		   <a href="#">Top Teams</a>
+
+		        	</div>
+		<div class="col-md-2">
+		  <a href="#">Top Products</a>
+        	</div>
+        <div class="col-md-2">
+		  <a href="#">Top Questions</a>
+        	</div>
+
+        </div>
+    </div>
+        <hr>
+<!--Footer bottom-->
+         <div class="row">
+        	<div class="col-md-12">
+        <p class="muted credit">&copy;  {{ "now"|date("Y") }} Wafutech &amp; Full-Stack Developer.</p>
+        	</div>
+        </div>
+        
+    </div>
+</div>";s:5:"mtime";i:1522047868;s:6:"markup";s:1940:"<div id="footer">
+	<script src="{{ [
+      'assets/javascript/jquery.js',
+    'assets/javascript/bootstrap.min.js',
+    'assets/javascript/clean-blog.min.js']|theme }}"></script>
+{% scripts %}
+</body>
+</html>
+    <div class="container footer-top">
+    	<div class="">
+        <hr />
+        <div class="row">
+        	<div class="col-md-2">
+        		<a href="#">Home</a>
+        	</div>
+        	<div class="col-md-2">
+           <a href="#">About</a>
+
+        	</div>
+		<div class="col-md-2">
+		   <a href="#">Contact</a>
+
+		        	</div>
+		<div class="col-md-2">
+		  <a href="#">Tearms & Conditions</a>
+        	</div>
+        <div class="col-md-2">
+		  <a href="#">Join</a>
+        	</div>
+
+        </div>
+        <div class="row">
+        	<div class="col-md-2">
+        		<a href="#">Blog</a>
+        	</div>
+        	<div class="col-md-2">
+           <a href="#">Freelancing</a>
+
+        	</div>
+		<div class="col-md-2">
+		   <a href="#">Store Room</a>
+
+		        	</div>
+		<div class="col-md-2">
+		  <a href="#">Questions</a>
+        	</div>
+        <div class="col-md-2">
+		  <a href="#">Courses</a>
+        	</div>
+
+        </div>
+        <div class="row">
+        	<div class="col-md-2">
+        		<a href="#">Top Programmers</a>
+        	</div>
+        	<div class="col-md-2">
+           <a href="#">Top Bloggers</a>
+
+        	</div>
+		<div class="col-md-2">
+		   <a href="#">Top Teams</a>
+
+		        	</div>
+		<div class="col-md-2">
+		  <a href="#">Top Products</a>
+        	</div>
+        <div class="col-md-2">
+		  <a href="#">Top Questions</a>
+        	</div>
+
+        </div>
+    </div>
+        <hr>
+<!--Footer bottom-->
+         <div class="row">
+        	<div class="col-md-12">
+        <p class="muted credit">&copy;  {{ "now"|date("Y") }} Wafutech &amp; Full-Stack Developer.</p>
+        	</div>
+        </div>
+        
+    </div>
+</div>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

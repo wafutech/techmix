@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Question Category
+
+# Model Form Field configuration
+form: $/wafutech/stackexchange/models/questioncategory/fields.yaml
+
+# Model Class name
+modelClass: Wafutech\Stackexchange\Models\QuestionCategory
+
+# Default redirect location
+defaultRedirect: wafutech/stackexchange/questioncategories
+
+# Create page
+create:
+    title: Create Question Category
+    redirect: wafutech/stackexchange/questioncategories/update/:id
+    redirectClose: wafutech/stackexchange/questioncategories
+
+# Update page
+update:
+    title: Edit Question Category
+    redirect: wafutech/stackexchange/questioncategories
+    redirectClose: wafutech/stackexchange/questioncategories
+
+# Preview page
+preview:
+    title: Preview Question Category

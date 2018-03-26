@@ -1,0 +1,17 @@
+1522052056a:1:{s:16:"technologies.htm";a:11:{s:8:"fileName";s:16:"technologies.htm";s:7:"content";s:406:"title = "Technologies"
+url = "/technologies"
+layout = "blog"
+description = "List technologies"
+is_hidden = 0
+
+[builderList]
+modelClass = "Wafutech\Technologies\Models\Technology"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "technology"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% component 'builderList' %}";s:5:"mtime";i:1521830000;s:6:"markup";s:29:"{% component 'builderList' %}";s:4:"code";N;s:5:"title";s:12:"Technologies";s:3:"url";s:13:"/technologies";s:6:"layout";s:4:"blog";s:11:"description";s:17:"List technologies";s:9:"is_hidden";s:1:"0";s:11:"builderList";a:8:{s:10:"modelClass";s:39:"Wafutech\Technologies\Models\Technology";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:10:"technology";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

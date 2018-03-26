@@ -1,0 +1,78 @@
+title = "Post Question"
+url = "/questions/ask"
+layout = "questions"
+description = "Ask Question Form"
+is_hidden = 0
+
+[session]
+security = "all"
+allowedUserGroups[] = "freelancers"
+allowedUserGroups[] = "admin"
+allowedUserGroups[] = "registered"
+==
+<?php
+function onPostQuestion()
+{
+    $question = input('question');
+    $question_detail = input('question_detail');
+    $this['title'] = $question;
+    $this['detail'] = $question_detail;
+}
+?>
+==
+<div class="row">
+	<div class="col-md-1">
+		<!--Blnak column-->
+	</div>
+	<div class="col-md-8">
+		<!--Input form-->
+		<div class="row">
+	<div class="col-md-12">
+	<div class="panel panel-warning">
+        <div class="panel-heading">
+            <h3 class="panel-title">Ask Question</h3>
+        </div>
+        <div class="panel-body">
+            <form class="form-inline" data-request="onPostQuestion" data-request-update="questions/showquestion: '#question-preview'">
+            	<div class="row">
+            		<div class="col-md-2">
+            			<h4>Title</h4>
+            		</div>
+            		<div class="col-md-10">
+            			<input type="text" name="question" class="form-control" id="question">
+            		</div>
+            	</div>
+            	<hr>
+            	<br><br>
+
+            	<div class="row">
+            		<div class="col-md-2">
+            			<h4>Question Details</h4>
+            		</div>
+            		<div class="col-md-10">
+            			<textarea class="form-control" cols="20" rows="15" name="question_detail"></textarea>
+            		</div>
+
+            		<div class="row">
+            			<div class="col-md-12" id="question-preview">
+            			{% partial 'questions/showquestion' %}
+            			</div>
+            		</div>
+            	</div>
+            	               
+                
+                <button type="submit" class="btn btn btn-primary pull-right" data-attach-loading>Post Your Answer</button>
+            </form>
+        </div>
+       
+    </div>
+		{% component 'session' %}
+	</div>
+	</div>
+
+	</div>
+
+	<div class="col-md-3">
+		<p>Help and updates</p>
+	</div>
+	</div>

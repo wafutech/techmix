@@ -1,0 +1,6 @@
+plugin:
+    name: 'wafutech.stackexchange::lang.plugin.name'
+    description: 'wafutech.stackexchange::lang.plugin.description'
+    author: wafutech
+    icon: oc-icon-asterisk
+    homepage: ''

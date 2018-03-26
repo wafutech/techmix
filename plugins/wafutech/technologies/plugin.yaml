@@ -1,0 +1,16 @@
+plugin:
+    name: 'wafutech.technologies::lang.plugin.name'
+    description: 'wafutech.technologies::lang.plugin.description'
+    author: wafutech
+    icon: oc-icon-caret-square-o-left
+    homepage: ''
+navigation:
+    technologies_main_menu:
+        label: Technologies
+        url: wafutech/technologies/technologies
+        icon: icon-apple
+        sideMenu:
+            technology_categories:
+                label: Categories
+                url: wafutech/technologies/technologies/categories
+                icon: icon-sitemap

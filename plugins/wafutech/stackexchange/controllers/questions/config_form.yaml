@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Question
+
+# Model Form Field configuration
+form: $/wafutech/stackexchange/models/question/fields.yaml
+
+# Model Class name
+modelClass: Wafutech\Stackexchange\Models\Question
+
+# Default redirect location
+defaultRedirect: wafutech/stackexchange/questions
+
+# Create page
+create:
+    title: Create Question
+    redirect: wafutech/stackexchange/questions/update/:id
+    redirectClose: wafutech/stackexchange/questions
+
+# Update page
+update:
+    title: Edit Question
+    redirect: wafutech/stackexchange/questions
+    redirectClose: wafutech/stackexchange/questions
+
+# Preview page
+preview:
+    title: Preview Question

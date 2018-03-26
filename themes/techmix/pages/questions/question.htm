@@ -1,0 +1,119 @@
+title = "Questions"
+url = "/question"
+layout = "questions"
+description = "Question Detail Page"
+is_hidden = 0
+==
+<div class="row">
+	<div class="col-md-1">
+		<!--Blank Column-->
+	</div>
+	<div class="col-md-8">
+		<h3>This is a sample question that can be assked. This is how it will be displayed on this page. The user will have to click for details or to answer the questions
+		</h3>
+	</div>
+	<div class="col-md-3">
+		<a href="{{ 'questions/ask_question'|page }}" class="btn btn-warning">Ask Question</a>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			Some adverts
+		</div>
+	</div>
+	<hr>
+<!--questions details -->
+	<div class="row">
+		<div class="col-md-1">
+			<!--blank column-->
+		</div>
+		<div class="col-md-8">
+			I have a number of records in a dataframe where the maturity date column is 31-12-9999 12:00:00 AM as the bonds never mature. This naturally raises the error:
+
+Out of bounds nanosecond timestamp: 9999-12-31 00:00:00
+I see the max date is:
+
+pd.Timestamp.max
+Timestamp('2262-04-11 23:47:16.854775807')
+I just wanted to clarify what the best approach to clean all date columns in the datframe and fix my bug? My code modelled off the docs:
+<pre>
+df_Fix_Date = df_Date['maturity_date'].head(8)
+display(df_Fix_Date)
+display(df_Fix_Date.dtypes)
+
+0    2020-08-15 00:00:00.000
+1    2022-11-06 00:00:00.000
+2    2019-03-15 00:00:00.000
+3    2025-01-15 00:00:00.000
+4    2035-05-29 00:00:00.000
+5    2027-06-01 00:00:00.000
+6    2021-04-01 00:00:00.000
+7    2022-04-03 00:00:00.000
+Name: maturity_date, dtype: object
+
+def conv(x):
+        return pd.Period(day = x%100, month = x//100 % 100, year = x // 10000, freq='D')
+
+df_Fix_Date['maturity_date'] = pd.to_datetime(df_Fix_Date['maturity_date'])               # convert to datetype
+df_Fix_Date['maturity_date'] = pd.PeriodIndex(df_Fix_Date['maturity_date'].apply(conv))   # fix error
+display(df_Fix_Date)
+</pre>
+<!--Question tags-->
+<div class="row">
+	<div class="col-md-12">
+		<table class="table table-striped">
+			<tr>
+				<td><span class="badge">tag1</span></td>
+				<td><span class="badge">tag2</span></td>
+				<td><span class="badge">tag3</span></td>
+				<td><span class="badge">tag4</span></td>
+
+			</tr>
+		</table>
+		<hr>
+		<table class="table">
+			<tr>
+				<td><a href="#">Add Comments</a></td>
+				<td><a href="#">Asked by: User name and avatar</a></td>
+			
+		</table>
+	</div>
+	</div>
+	<hr>
+	<!--Answers-->
+
+	<div class="row">
+	<div class="col-md-12">
+		<h3>Answers</h3>
+		<pre>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
+	</div>
+	</div>
+	<hr>
+	<div class="row">
+	<div class="col-md-12">
+	<div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Your Answer</h3>
+        </div>
+        <div class="panel-body">
+            <form class="form-inline" data-request="onTest" data-request-update="submitAnswer: '#result'">
+            	<p>
+            		<textarea class="form-control" cols="20" rows="15" name="answer"></textarea>
+            	</p>
+               
+                
+                <button type="submit" class="btn btn btn-primary" data-attach-loading>Post Your Answer</button>
+            </form>
+        </div>
+       
+    </div>
+		
+	</div>
+	</div>
+
+
+		</div>
+		<div class="col-md-3">
+			Updates and related questions
+		</div>
+	</div>
+</div>

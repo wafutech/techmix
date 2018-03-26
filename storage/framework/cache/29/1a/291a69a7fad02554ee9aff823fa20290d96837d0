@@ -1,0 +1,23 @@
+1522052057a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:260:"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ this.page.title }}</title>
+    {% styles %}
+    <link href="{{ [
+            'assets/css/bootstrap.min.css',
+            'assets/css/clean-blog.min.css'
+        ]|theme }}" rel="stylesheet">
+
+</head>
+<body>";s:5:"mtime";i:1521480643;s:6:"markup";s:260:"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ this.page.title }}</title>
+    {% styles %}
+    <link href="{{ [
+            'assets/css/bootstrap.min.css',
+            'assets/css/clean-blog.min.css'
+        ]|theme }}" rel="stylesheet">
+
+</head>
+<body>";s:4:"code";N;}}

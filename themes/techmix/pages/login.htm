@@ -1,0 +1,12 @@
+title = "Login"
+url = "/login"
+layout = "master"
+description = "User login page"
+is_hidden = 0
+
+[account]
+redirect = "timeline/timeline"
+paramCode = "code"
+forceSecure = 0
+==
+{% component 'account' %}

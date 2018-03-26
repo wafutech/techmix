@@ -1,0 +1,6 @@
+columns:
+    question:
+        label: Question
+        type: text
+        searchable: true
+        sortable: true

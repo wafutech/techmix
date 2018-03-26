@@ -1,0 +1,11 @@
+fields:
+    category:
+        label: 'Question Category'
+        span: full
+        required: 1
+        type: text
+    description:
+        label: Description
+        span: full
+        placeholder: 'Category Description'
+        type: text

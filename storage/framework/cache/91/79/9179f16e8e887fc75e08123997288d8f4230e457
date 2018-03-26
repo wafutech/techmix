@@ -1,0 +1,77 @@
+1522052056a:1:{s:23:"questions/questions.htm";a:10:{s:8:"fileName";s:23:"questions/questions.htm";s:7:"content";s:2189:"title = "Questions"
+url = "/questions"
+layout = "questions"
+description = "Displays list of questions"
+is_hidden = 0
+==
+<div class="row">
+	<!--Column displaying questions votes views and and answers-->
+	<div class="col-md-2">
+		<!--Sub columns-->
+		<div class="row">
+			<div class="col-md-4">
+				0 Views
+			</div>
+			<div class="col-md-4">
+				0 Answers
+			</div>
+			<div class="col-md-4">
+				0 Votes
+			</div>
+		</div>
+	</div>
+	<!--Central column listing questions with links-->
+	<div class="col-md-7">
+		<p><a href="{{ 'questions/question'|page }}">This is a sample question that can be assked. This is how it will be displayed on this page. The user will have to click for details or to answer the questions</a></p>
+		<p><pre>tag1, tag2 tag3</pre> by Wafutech 30 mins ago</p>
+		<p><a href="#">This is a sample question that can be assked. This is how it will be displayed on this page. The user will have to click for details or to answer the questions</a></p>
+		<p><pre>tag1, tag2 tag3</pre> by Wafutech 30 mins ago</p>
+		<p><a href="#">This is a sample question that can be assked. This is how it will be displayed on this page. The user will have to click for details or to answer the questions</a></p>
+		<p><pre>tag1, tag2 tag3</pre> by Wafutech 30 mins ago</p>
+		<p><a href="#">This is a sample question that can be assked. This is how it will be displayed on this page. The user will have to click for details or to answer the questions</a></p>
+		<p><pre>tag1, tag2 tag3</pre> by Wafutech 30 mins ago</p>
+		<p><a href="#">This is a sample question that can be assked. This is how it will be displayed on this page. The user will have to click for details or to answer the questions</a></p>
+		<p><pre>tag1, tag2 tag3</pre> by Wafutech 30 mins ago</p>
+		<p><a href="#">This is a sample question that can be assked. This is how it will be displayed on this page. The user will have to click for details or to answer the questions</a></p>
+		<p><pre>tag1, tag2 tag3</pre> by Wafutech 30 mins ago</p>
+	</div>
+	<!--The right most column to display updates and hot network questions-->
+	<div class="col-md-3">
+		The updates column
+	</div>
+</div>";s:5:"mtime";i:1521701442;s:6:"markup";s:2063:"<div class="row">
+	<!--Column displaying questions votes views and and answers-->
+	<div class="col-md-2">
+		<!--Sub columns-->
+		<div class="row">
+			<div class="col-md-4">
+				0 Views
+			</div>
+			<div class="col-md-4">
+				0 Answers
+			</div>
+			<div class="col-md-4">
+				0 Votes
+			</div>
+		</div>
+	</div>
+	<!--Central column listing questions with links-->
+	<div class="col-md-7">
+		<p><a href="{{ 'questions/question'|page }}">This is a sample question that can be assked. This is how it will be displayed on this page. The user will have to click for details or to answer the questions</a></p>
+		<p><pre>tag1, tag2 tag3</pre> by Wafutech 30 mins ago</p>
+		<p><a href="#">This is a sample question that can be assked. This is how it will be displayed on this page. The user will have to click for details or to answer the questions</a></p>
+		<p><pre>tag1, tag2 tag3</pre> by Wafutech 30 mins ago</p>
+		<p><a href="#">This is a sample question that can be assked. This is how it will be displayed on this page. The user will have to click for details or to answer the questions</a></p>
+		<p><pre>tag1, tag2 tag3</pre> by Wafutech 30 mins ago</p>
+		<p><a href="#">This is a sample question that can be assked. This is how it will be displayed on this page. The user will have to click for details or to answer the questions</a></p>
+		<p><pre>tag1, tag2 tag3</pre> by Wafutech 30 mins ago</p>
+		<p><a href="#">This is a sample question that can be assked. This is how it will be displayed on this page. The user will have to click for details or to answer the questions</a></p>
+		<p><pre>tag1, tag2 tag3</pre> by Wafutech 30 mins ago</p>
+		<p><a href="#">This is a sample question that can be assked. This is how it will be displayed on this page. The user will have to click for details or to answer the questions</a></p>
+		<p><pre>tag1, tag2 tag3</pre> by Wafutech 30 mins ago</p>
+	</div>
+	<!--The right most column to display updates and hot network questions-->
+	<div class="col-md-3">
+		The updates column
+	</div>
+</div>";s:4:"code";N;s:5:"title";s:9:"Questions";s:3:"url";s:10:"/questions";s:6:"layout";s:9:"questions";s:11:"description";s:26:"Displays list of questions";s:9:"is_hidden";s:1:"0";}}

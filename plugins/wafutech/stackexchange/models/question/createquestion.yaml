@@ -1,0 +1,15 @@
+fields:
+    question:
+        label: Title
+        span: full
+        placeholder: 'Enter title that best describes your question'
+        required: 1
+        type: text
+        comment: 'Not more than 255 characters long'
+    question_detail:
+        label: Detail
+        span: auto
+        size: ''
+        required: 1
+        type: richeditor
+        commentAbove: 'Enter details of the question with snapshot of what you''re doing. Format code appropriately.'

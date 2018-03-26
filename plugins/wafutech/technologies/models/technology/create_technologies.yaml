@@ -1,0 +1,20 @@
+fields:
+    technology:
+        label: Technology
+        span: auto
+        placeholder: Technology
+        required: 1
+        type: text
+    category_id:
+        label: Category
+        options:
+            1: Web
+            2: Desktop
+            3: Mobile
+            4: Others
+        emptyOption: 'Select Technology'
+        span: auto
+        default: '1'
+        cssClass: ''
+        required: 1
+        type: dropdown

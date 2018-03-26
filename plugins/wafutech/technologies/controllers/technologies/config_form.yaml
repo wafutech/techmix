@@ -1,0 +1,11 @@
+name: Technologies
+modelClass: Wafutech\Technologies\Models\Technology
+form: $/wafutech/technologies/models/technology/create_technologies.yaml
+defaultRedirect: wafutech/technologies/technologies
+create:
+    redirect: 'wafutech/technologies/technologies/update/:id'
+    redirectClose: wafutech/technologies/technologies
+update:
+    redirect: wafutech/technologies/technologies
+    redirectClose: wafutech/technologies/technologies
+preview: {  }

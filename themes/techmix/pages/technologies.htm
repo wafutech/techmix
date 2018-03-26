@@ -1,0 +1,17 @@
+title = "Technologies"
+url = "/technologies"
+layout = "blog"
+description = "List technologies"
+is_hidden = 0
+
+[builderList]
+modelClass = "Wafutech\Technologies\Models\Technology"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "technology"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% component 'builderList' %}

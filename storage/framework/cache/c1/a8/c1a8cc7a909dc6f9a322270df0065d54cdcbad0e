@@ -1,0 +1,23 @@
+1522048593a:1:{s:16:"blog/sidebar.htm";a:5:{s:8:"fileName";s:16:"blog/sidebar.htm";s:7:"content";s:297:"<div class="blog-sidebar">
+	 <div class="page-header">
+        <h2>Filters</small></h2>
+    </div>
+	<ul>
+
+		<li><a href="#">Filter by Categories</a></li>
+		<li><a href="#">Filter by Authory</a></li>
+		<li><a href="#">Latest</a></li>
+		<li><a href="#">Most Popular</a></li>
+	</ul>
+</div>";s:5:"mtime";i:1521618122;s:6:"markup";s:297:"<div class="blog-sidebar">
+	 <div class="page-header">
+        <h2>Filters</small></h2>
+    </div>
+	<ul>
+
+		<li><a href="#">Filter by Categories</a></li>
+		<li><a href="#">Filter by Authory</a></li>
+		<li><a href="#">Latest</a></li>
+		<li><a href="#">Most Popular</a></li>
+	</ul>
+</div>";s:4:"code";N;}}
