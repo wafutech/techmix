@@ -1,4 +1,4 @@
-1522172959a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:9595:"title = "Home Page"
+1522174874a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:9560:"title = "Home Page"
 url = "/"
 layout = "master"
 ==
@@ -8,7 +8,6 @@ layout = "master"
         {% content "welcome.htm" %}
 
     </div>
-         {% content "login.htm" %}
     
 </div>
 
@@ -229,12 +228,11 @@ layout = "master"
     </div>
 
 </div>
-";s:5:"mtime";i:1522169913;s:6:"markup";s:9542:"<div class="jumbotron">
+";s:5:"mtime";i:1522174164;s:6:"markup";s:9507:"<div class="jumbotron">
     <div class="container">
         {% content "welcome.htm" %}
 
     </div>
-         {% content "login.htm" %}
     
 </div>
 
