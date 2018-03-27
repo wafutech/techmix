@@ -16,96 +16,95 @@ class __TwigTemplate_a8107216b6ba7403a9d4b6b7b4b247e44689827ae1ff4426f9041dcaa6f
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<div class=\"footer-top\">
-\t<script src=\"";
-        // line 2
-        echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter(array(0 => "assets/javascript/jquery.js", 1 => "assets/javascript/bootstrap.min.js", 2 => "assets/javascript/clean-blog.min.js"));
-        // line 5
+        echo "<script src=\"";
+        echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter(array(0 => "assets/javascript/jquery.js", 1 => "assets/javascript/bootstrap.min.js|theme", 2 => "assets/javascript/clean-blog.min.js"));
+        // line 4
         echo "\"></script>
 ";
-        // line 6
+        // line 5
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 7
-        echo "</body>
-</html>
-    <div class=\"container footer-top\">
-    \t<div class=\"\">
+        // line 6
+        echo "<div class=\"container-fluid footer-top\">
+        <div class=\"\">
         <hr />
         <div class=\"row\">
-        \t<div class=\"col-md-2\">
-        \t\t<a href=\"#\">Home</a>
-        \t</div>
-        \t<div class=\"col-md-2\">
+            <div class=\"col-md-2\">
+
+                <a href=\"#\">Home</a>
+            </div>
+            <div class=\"col-md-2\">
            <a href=\"#\">About</a>
 
-        \t</div>
-\t\t<div class=\"col-md-2\">
-\t\t   <a href=\"#\">Contact</a>
-
-\t\t        \t</div>
-\t\t<div class=\"col-md-2\">
-\t\t  <a href=\"#\">Tearms & Conditions</a>
-        \t</div>
+            </div>
         <div class=\"col-md-2\">
-\t\t  <a href=\"#\">Join</a>
-        \t</div>
+           <a href=\"#\">Contact</a>
+
+                    </div>
+        <div class=\"col-md-2\">
+          <a href=\"#\">Tearms & Conditions</a>
+            </div>
+        <div class=\"col-md-2\">
+          <a href=\"#\">Join</a>
+            </div>
 
         </div>
         <div class=\"row\">
-        \t<div class=\"col-md-2\">
-        \t\t<a href=\"#\">Blog</a>
-        \t</div>
-        \t<div class=\"col-md-2\">
+            <div class=\"col-md-2\">
+                <a href=\"#\">Blog</a>
+            </div>
+            <div class=\"col-md-2\">
            <a href=\"#\">Freelancing</a>
 
-        \t</div>
-\t\t<div class=\"col-md-2\">
-\t\t   <a href=\"#\">Store Room</a>
-
-\t\t        \t</div>
-\t\t<div class=\"col-md-2\">
-\t\t  <a href=\"#\">Questions</a>
-        \t</div>
+            </div>
         <div class=\"col-md-2\">
-\t\t  <a href=\"#\">Courses</a>
-        \t</div>
+           <a href=\"#\">Store Room</a>
+
+                    </div>
+        <div class=\"col-md-2\">
+          <a href=\"#\">Questions</a>
+            </div>
+        <div class=\"col-md-2\">
+          <a href=\"#\">Courses</a>
+            </div>
 
         </div>
         <div class=\"row\">
-        \t<div class=\"col-md-2\">
-        \t\t<a href=\"#\">Top Programmers</a>
-        \t</div>
-        \t<div class=\"col-md-2\">
+            <div class=\"col-md-2\">
+                <a href=\"#\">Top Programmers</a>
+            </div>
+            <div class=\"col-md-2\">
            <a href=\"#\">Top Bloggers</a>
 
-        \t</div>
-\t\t<div class=\"col-md-2\">
-\t\t   <a href=\"#\">Top Teams</a>
-
-\t\t        \t</div>
-\t\t<div class=\"col-md-2\">
-\t\t  <a href=\"#\">Top Products</a>
-        \t</div>
+            </div>
         <div class=\"col-md-2\">
-\t\t  <a href=\"#\">Top Questions</a>
-        \t</div>
+           <a href=\"#\">Top Teams</a>
+
+                    </div>
+        <div class=\"col-md-2\">
+          <a href=\"#\">Top Products</a>
+            </div>
+        <div class=\"col-md-2\">
+          <a href=\"#\">Top Questions</a>
+            </div>
 
         </div>
     </div>
         <hr>
 <!--Footer bottom-->
          <div class=\"row\">
-        \t<div class=\"col-md-12 footer-copyright\">
+            <div class=\"col-md-12 footer-copyright\">
         <p class=\"muted credit\">&copy;  ";
-        // line 77
+        // line 75
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo " Wafutech &amp; Full-Stack Developer.</p>
-        \t</div>
+            </div>
         </div>
         
     </div>
-</div>";
+
+</body>
+</html>";
     }
 
     public function getTemplateName()
@@ -120,92 +119,92 @@ class __TwigTemplate_a8107216b6ba7403a9d4b6b7b4b247e44689827ae1ff4426f9041dcaa6f
 
     public function getDebugInfo()
     {
-        return array (  102 => 77,  30 => 7,  27 => 6,  24 => 5,  22 => 2,  19 => 1,);
+        return array (  99 => 75,  28 => 6,  25 => 5,  22 => 4,  19 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("<div class=\"footer-top\">
-\t<script src=\"{{ [
+        return new Twig_Source("<script src=\"{{ [
       'assets/javascript/jquery.js',
-    'assets/javascript/bootstrap.min.js',
+    'assets/javascript/bootstrap.min.js|theme',
     'assets/javascript/clean-blog.min.js']|theme }}\"></script>
 {% scripts %}
-</body>
-</html>
-    <div class=\"container footer-top\">
-    \t<div class=\"\">
+<div class=\"container-fluid footer-top\">
+        <div class=\"\">
         <hr />
         <div class=\"row\">
-        \t<div class=\"col-md-2\">
-        \t\t<a href=\"#\">Home</a>
-        \t</div>
-        \t<div class=\"col-md-2\">
+            <div class=\"col-md-2\">
+
+                <a href=\"#\">Home</a>
+            </div>
+            <div class=\"col-md-2\">
            <a href=\"#\">About</a>
 
-        \t</div>
-\t\t<div class=\"col-md-2\">
-\t\t   <a href=\"#\">Contact</a>
-
-\t\t        \t</div>
-\t\t<div class=\"col-md-2\">
-\t\t  <a href=\"#\">Tearms & Conditions</a>
-        \t</div>
+            </div>
         <div class=\"col-md-2\">
-\t\t  <a href=\"#\">Join</a>
-        \t</div>
+           <a href=\"#\">Contact</a>
+
+                    </div>
+        <div class=\"col-md-2\">
+          <a href=\"#\">Tearms & Conditions</a>
+            </div>
+        <div class=\"col-md-2\">
+          <a href=\"#\">Join</a>
+            </div>
 
         </div>
         <div class=\"row\">
-        \t<div class=\"col-md-2\">
-        \t\t<a href=\"#\">Blog</a>
-        \t</div>
-        \t<div class=\"col-md-2\">
+            <div class=\"col-md-2\">
+                <a href=\"#\">Blog</a>
+            </div>
+            <div class=\"col-md-2\">
            <a href=\"#\">Freelancing</a>
 
-        \t</div>
-\t\t<div class=\"col-md-2\">
-\t\t   <a href=\"#\">Store Room</a>
-
-\t\t        \t</div>
-\t\t<div class=\"col-md-2\">
-\t\t  <a href=\"#\">Questions</a>
-        \t</div>
+            </div>
         <div class=\"col-md-2\">
-\t\t  <a href=\"#\">Courses</a>
-        \t</div>
+           <a href=\"#\">Store Room</a>
+
+                    </div>
+        <div class=\"col-md-2\">
+          <a href=\"#\">Questions</a>
+            </div>
+        <div class=\"col-md-2\">
+          <a href=\"#\">Courses</a>
+            </div>
 
         </div>
         <div class=\"row\">
-        \t<div class=\"col-md-2\">
-        \t\t<a href=\"#\">Top Programmers</a>
-        \t</div>
-        \t<div class=\"col-md-2\">
+            <div class=\"col-md-2\">
+                <a href=\"#\">Top Programmers</a>
+            </div>
+            <div class=\"col-md-2\">
            <a href=\"#\">Top Bloggers</a>
 
-        \t</div>
-\t\t<div class=\"col-md-2\">
-\t\t   <a href=\"#\">Top Teams</a>
-
-\t\t        \t</div>
-\t\t<div class=\"col-md-2\">
-\t\t  <a href=\"#\">Top Products</a>
-        \t</div>
+            </div>
         <div class=\"col-md-2\">
-\t\t  <a href=\"#\">Top Questions</a>
-        \t</div>
+           <a href=\"#\">Top Teams</a>
+
+                    </div>
+        <div class=\"col-md-2\">
+          <a href=\"#\">Top Products</a>
+            </div>
+        <div class=\"col-md-2\">
+          <a href=\"#\">Top Questions</a>
+            </div>
 
         </div>
     </div>
         <hr>
 <!--Footer bottom-->
          <div class=\"row\">
-        \t<div class=\"col-md-12 footer-copyright\">
+            <div class=\"col-md-12 footer-copyright\">
         <p class=\"muted credit\">&copy;  {{ \"now\"|date(\"Y\") }} Wafutech &amp; Full-Stack Developer.</p>
-        \t</div>
+            </div>
         </div>
         
     </div>
-</div>", "C:\\xampp\\htdocs\\techmix/themes/techmix/partials/site/footer.htm", "");
+
+</body>
+</html>", "C:\\xampp\\htdocs\\techmix/themes/techmix/partials/site/footer.htm", "");
     }
 }

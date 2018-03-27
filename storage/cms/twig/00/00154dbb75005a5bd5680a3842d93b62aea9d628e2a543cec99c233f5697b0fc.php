@@ -51,75 +51,82 @@ class __TwigTemplate_e9a8ea00578e4ed9758843ca8032af26980c0e6219970093ca74f450997
         // line 14
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/css/bootstrap.min.css");
         echo "\" rel=\"stylesheet\">
-        ";
+               <link href=\"";
         // line 15
+        echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/css/social-login.css");
+        echo "\" rel=\"stylesheet\">
+
+        ";
+        // line 17
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
-        // line 16
+        // line 18
         echo "    </head>
     <body style=\"margin: 0px;\">
 
         <!-- Header -->
         <header id=\"layout-header\">
             ";
-        // line 21
+        // line 23
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/header"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 22
-        echo "        </header>
-        ";
-        // line 23
-        $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/topnavbar"        , $context['__cms_partial_params']        , true        );
-        unset($context['__cms_partial_params']);
         // line 24
-        echo "       
+        echo "        </header>
+<br><br><br><br>
+        ";
+        // line 26
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/navbar"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 27
+        echo "
+       
 
         <!-- Content -->
         <section id=\"layout-content home-content\">
             ";
-        // line 28
+        // line 32
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 29
+        // line 33
         echo "        </section>
 
         <!-- Footer -->
         <footer id=\"layout-footer\">
-            ";
-        // line 33
+        ";
+        // line 37
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 34
+        // line 38
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 37
+        // line 41
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/javascript/jquery.js");
         echo "\"></script>
         <script src=\"";
-        // line 38
+        // line 42
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/javascript/bootstrap.js");
         echo "\"></script>
         <script src=\"";
-        // line 39
+        // line 43
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/javascript/app.js");
         echo "\"></script>
         ";
-        // line 40
+        // line 44
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css">'.PHP_EOL;
-        // line 41
+        // line 45
         echo "        ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 42
+        // line 46
         echo "
     </body>
 </html>";
@@ -137,7 +144,7 @@ class __TwigTemplate_e9a8ea00578e4ed9758843ca8032af26980c0e6219970093ca74f450997
 
     public function getDebugInfo()
     {
-        return array (  123 => 42,  119 => 41,  112 => 40,  108 => 39,  104 => 38,  100 => 37,  95 => 34,  91 => 33,  85 => 29,  83 => 28,  77 => 24,  73 => 23,  70 => 22,  66 => 21,  59 => 16,  56 => 15,  52 => 14,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  130 => 46,  126 => 45,  119 => 44,  115 => 43,  111 => 42,  107 => 41,  102 => 38,  98 => 37,  92 => 33,  90 => 32,  83 => 27,  79 => 26,  75 => 24,  71 => 23,  64 => 18,  61 => 17,  56 => 15,  52 => 14,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -156,6 +163,8 @@ class __TwigTemplate_e9a8ea00578e4ed9758843ca8032af26980c0e6219970093ca74f450997
        <link href=\"{{ 'assets/css/main.css'|theme }}\" rel=\"stylesheet\">
         <link href=\"{{ 'assets/css/theme.css'|theme }}\" rel=\"stylesheet\">
         <link href=\"{{ 'assets/css/bootstrap.min.css'|theme }}\" rel=\"stylesheet\">
+               <link href=\"{{ 'assets/css/social-login.css'|theme }}\" rel=\"stylesheet\">
+
         {% styles %}
     </head>
     <body style=\"margin: 0px;\">
@@ -164,7 +173,9 @@ class __TwigTemplate_e9a8ea00578e4ed9758843ca8032af26980c0e6219970093ca74f450997
         <header id=\"layout-header\">
             {% partial 'site/header' %}
         </header>
-        {% partial 'site/topnavbar' %}
+<br><br><br><br>
+        {% partial 'site/navbar' %}
+
        
 
         <!-- Content -->
@@ -174,7 +185,7 @@ class __TwigTemplate_e9a8ea00578e4ed9758843ca8032af26980c0e6219970093ca74f450997
 
         <!-- Footer -->
         <footer id=\"layout-footer\">
-            {% partial 'site/footer' %}
+        {% partial 'site/footer' %}
         </footer>
 
         <!-- Scripts -->
