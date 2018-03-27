@@ -16,14 +16,14 @@ description = "Home layout"
         <link href="{{ 'assets/css/bootstrap.min.css'|theme }}" rel="stylesheet">
         {% styles %}
     </head>
-    <body>
+    <body style="margin: 0px;">
 
         <!-- Header -->
         <header id="layout-header">
             {% partial 'site/header' %}
         </header>
-        {% partial 'site/navbar' %}
         {% partial 'site/topnavbar' %}
+       
 
         <!-- Content -->
         <section id="layout-content home-content">
@@ -32,7 +32,7 @@ description = "Home layout"
 
         <!-- Footer -->
         <footer id="layout-footer">
-            {% partial 'site/Footer' %}
+            {% partial 'site/footer' %}
         </footer>
 
         <!-- Scripts -->

@@ -16,8 +16,7 @@ class __TwigTemplate_ab976da61cfa580242f2f85cf0ab068bdf29344bfa562362701d128cee5
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<div class=\"site-banner\">
-     <nav class=\"navbar navbar-default navbar-inverse fixed-top topbar\" role=\"navigation\">
+        echo "<nav class=\"navbar navbar-default  navbar-top\" role=\"navigation\">
   <div class=\"container-fluid\">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class=\"navbar-header\">
@@ -28,7 +27,7 @@ class __TwigTemplate_ab976da61cfa580242f2f85cf0ab068bdf29344bfa562362701d128cee5
         <span class=\"icon-bar\"></span>
       </button>
       <a class=\"navbar-brand\" href=\"#\"><img src=\"";
-        // line 12
+        // line 11
         echo "assets/images/wafutech.png|theme";
         echo "\" alt=\"Logo\" /></a>
     </div>
@@ -37,24 +36,24 @@ class __TwigTemplate_ab976da61cfa580242f2f85cf0ab068bdf29344bfa562362701d128cee5
     <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">
       <ul class=\"nav navbar-nav\">
         <li class=\"";
-        // line 18
+        // line 17
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "about")) {
             echo "active ";
         }
         echo "\">
       <a href=\"";
-        // line 19
+        // line 18
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("about");
         echo "\">About</a>
   </li>
     <li class=\"";
-        // line 21
+        // line 20
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "contact")) {
             echo "active ";
         }
         echo "\">
       <a href=\"";
-        // line 22
+        // line 21
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("contact");
         echo "\">Contact</a>
   </li>
@@ -105,8 +104,7 @@ class __TwigTemplate_ab976da61cfa580242f2f85cf0ab068bdf29344bfa562362701d128cee5
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
-</nav>
-</div>";
+</nav>";
     }
 
     public function getTemplateName()
@@ -121,13 +119,12 @@ class __TwigTemplate_ab976da61cfa580242f2f85cf0ab068bdf29344bfa562362701d128cee5
 
     public function getDebugInfo()
     {
-        return array (  58 => 22,  52 => 21,  47 => 19,  41 => 18,  32 => 12,  19 => 1,);
+        return array (  57 => 21,  51 => 20,  46 => 18,  40 => 17,  31 => 11,  19 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("<div class=\"site-banner\">
-     <nav class=\"navbar navbar-default navbar-inverse fixed-top topbar\" role=\"navigation\">
+        return new Twig_Source("<nav class=\"navbar navbar-default  navbar-top\" role=\"navigation\">
   <div class=\"container-fluid\">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class=\"navbar-header\">
@@ -196,7 +193,6 @@ class __TwigTemplate_ab976da61cfa580242f2f85cf0ab068bdf29344bfa562362701d128cee5
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
-</nav>
-</div>", "C:\\xampp\\htdocs\\techmix/themes/techmix/partials/site/topnavbar.htm", "");
+</nav>", "C:\\xampp\\htdocs\\techmix/themes/techmix/partials/site/topnavbar.htm", "");
     }
 }

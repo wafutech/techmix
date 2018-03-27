@@ -1,5 +1,5 @@
-1522052084a:1:{s:15:"site/Footer.htm";a:6:{s:8:"fileName";s:15:"site/Footer.htm";s:7:"content";s:1944:"==
-<div id="footer">
+1522158130a:1:{s:15:"site/Footer.htm";a:6:{s:8:"fileName";s:15:"site/Footer.htm";s:7:"content";s:1968:"==
+<div class="footer-top">
 	<script src="{{ [
       'assets/javascript/jquery.js',
     'assets/javascript/bootstrap.min.js',
@@ -74,13 +74,13 @@
         <hr>
 <!--Footer bottom-->
          <div class="row">
-        	<div class="col-md-12">
+        	<div class="col-md-12 footer-copyright">
         <p class="muted credit">&copy;  {{ "now"|date("Y") }} Wafutech &amp; Full-Stack Developer.</p>
         	</div>
         </div>
         
     </div>
-</div>";s:5:"mtime";i:1522047868;s:6:"markup";s:1940:"<div id="footer">
+</div>";s:5:"mtime";i:1522157525;s:6:"markup";s:1964:"<div class="footer-top">
 	<script src="{{ [
       'assets/javascript/jquery.js',
     'assets/javascript/bootstrap.min.js',
@@ -155,7 +155,7 @@
         <hr>
 <!--Footer bottom-->
          <div class="row">
-        	<div class="col-md-12">
+        	<div class="col-md-12 footer-copyright">
         <p class="muted credit">&copy;  {{ "now"|date("Y") }} Wafutech &amp; Full-Stack Developer.</p>
         	</div>
         </div>

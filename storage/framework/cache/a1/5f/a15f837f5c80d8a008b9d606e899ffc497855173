@@ -1,5 +1,4 @@
-1522049907a:1:{s:18:"site/topnavbar.htm";a:5:{s:8:"fileName";s:18:"site/topnavbar.htm";s:7:"content";s:3500:"  <div class="site-banner">
-     <nav class="navbar navbar-default navbar-inverse fixed-top topbar" role="navigation">
+1522158270a:1:{s:18:"site/topnavbar.htm";a:5:{s:8:"fileName";s:18:"site/topnavbar.htm";s:7:"content";s:3445:"     <nav class="navbar navbar-default  navbar-top" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -69,10 +68,9 @@
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
-</div>
 
-";s:5:"mtime";i:1521636407;s:6:"markup";s:3494:"<div class="site-banner">
-     <nav class="navbar navbar-default navbar-inverse fixed-top topbar" role="navigation">
+
+";s:5:"mtime";i:1522156411;s:6:"markup";s:3434:"<nav class="navbar navbar-default  navbar-top" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -141,5 +139,4 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
-</nav>
-</div>";s:4:"code";N;}}
+</nav>";s:4:"code";N;}}

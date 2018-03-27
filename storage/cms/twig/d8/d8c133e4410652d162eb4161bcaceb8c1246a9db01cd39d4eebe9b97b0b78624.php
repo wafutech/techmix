@@ -61,7 +61,7 @@ class __TwigTemplate_3d99a9daa8a90bc14831f4b6fd3b6f02e829d648dc06ca6e45c7e0cabf4
         echo "\">
               <a href=\"";
         // line 15
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("freelancer/postwork");
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("questions/ask_question");
         echo "\" class=\"links\">Ask Question</a>
               </li>         
 
@@ -84,7 +84,7 @@ class __TwigTemplate_3d99a9daa8a90bc14831f4b6fd3b6f02e829d648dc06ca6e45c7e0cabf4
         echo "\">
               <a href=\"";
         // line 22
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("store/home");
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("home");
         echo "\" class=\"links\">Home</a>
               </li>                               
                 
@@ -92,7 +92,7 @@ class __TwigTemplate_3d99a9daa8a90bc14831f4b6fd3b6f02e829d648dc06ca6e45c7e0cabf4
         </div>
         <div class=\"row row2\">
             <div class=\"col-sm-2\">
-                <h2 style=\"margin:0px;\"><span class=\"smallnav menu\" onclick=\"openNav()\">☰ Brand</span></h2>
+                <h2 style=\"margin:0px;\"><span class=\"smallnav menu\" onclick=\"openNav()\">TechMix Logo</span></h2>
             </div>
             <div class=\"flipkart-navbar-search smallsearch col-sm-8 col-xs-11\">
                 <div class=\"row\">
@@ -151,21 +151,21 @@ class __TwigTemplate_3d99a9daa8a90bc14831f4b6fd3b6f02e829d648dc06ca6e45c7e0cabf4
               <a href=\"{{ 'freelancer/postwork'|page }}\" class=\"links\">Un-answered</a>
               </li> 
               <li class=\"upper-links{% if( this.page.id == 'posts') %}active {% endif %}\">
-              <a href=\"{{ 'freelancer/postwork'|page }}\" class=\"links\">Ask Question</a>
+              <a href=\"{{ 'questions/ask_question'|page }}\" class=\"links\">Ask Question</a>
               </li>         
 
                 <li class=\"upper-links{% if( this.page.id == 'posts') %}active {% endif %}\">
               <a href=\"{{ 'blog/posts'|page }}\" class=\"links\">Blog</a>
               </li>
               <li class=\"upper-links{% if( this.page.id == 'home') %}active {% endif %}\">
-              <a href=\"{{ 'store/home'|page }}\" class=\"links\">Home</a>
+              <a href=\"{{ 'home'|page }}\" class=\"links\">Home</a>
               </li>                               
                 
             </ul>
         </div>
         <div class=\"row row2\">
             <div class=\"col-sm-2\">
-                <h2 style=\"margin:0px;\"><span class=\"smallnav menu\" onclick=\"openNav()\">☰ Brand</span></h2>
+                <h2 style=\"margin:0px;\"><span class=\"smallnav menu\" onclick=\"openNav()\">TechMix Logo</span></h2>
             </div>
             <div class=\"flipkart-navbar-search smallsearch col-sm-8 col-xs-11\">
                 <div class=\"row\">

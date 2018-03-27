@@ -57,7 +57,7 @@ class __TwigTemplate_e9a8ea00578e4ed9758843ca8032af26980c0e6219970093ca74f450997
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
         // line 16
         echo "    </head>
-    <body>
+    <body style=\"margin: 0px;\">
 
         <!-- Header -->
         <header id=\"layout-header\">
@@ -71,15 +71,11 @@ class __TwigTemplate_e9a8ea00578e4ed9758843ca8032af26980c0e6219970093ca74f450997
         ";
         // line 23
         $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/navbar"        , $context['__cms_partial_params']        , true        );
-        unset($context['__cms_partial_params']);
-        // line 24
-        echo "        ";
-        $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/topnavbar"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 25
-        echo "
+        // line 24
+        echo "       
+
         <!-- Content -->
         <section id=\"layout-content home-content\">
             ";
@@ -93,7 +89,7 @@ class __TwigTemplate_e9a8ea00578e4ed9758843ca8032af26980c0e6219970093ca74f450997
             ";
         // line 33
         $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/Footer"        , $context['__cms_partial_params']        , true        );
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
         // line 34
         echo "        </footer>
@@ -141,7 +137,7 @@ class __TwigTemplate_e9a8ea00578e4ed9758843ca8032af26980c0e6219970093ca74f450997
 
     public function getDebugInfo()
     {
-        return array (  127 => 42,  123 => 41,  116 => 40,  112 => 39,  108 => 38,  104 => 37,  99 => 34,  95 => 33,  89 => 29,  87 => 28,  82 => 25,  77 => 24,  73 => 23,  70 => 22,  66 => 21,  59 => 16,  56 => 15,  52 => 14,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  123 => 42,  119 => 41,  112 => 40,  108 => 39,  104 => 38,  100 => 37,  95 => 34,  91 => 33,  85 => 29,  83 => 28,  77 => 24,  73 => 23,  70 => 22,  66 => 21,  59 => 16,  56 => 15,  52 => 14,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -162,14 +158,14 @@ class __TwigTemplate_e9a8ea00578e4ed9758843ca8032af26980c0e6219970093ca74f450997
         <link href=\"{{ 'assets/css/bootstrap.min.css'|theme }}\" rel=\"stylesheet\">
         {% styles %}
     </head>
-    <body>
+    <body style=\"margin: 0px;\">
 
         <!-- Header -->
         <header id=\"layout-header\">
             {% partial 'site/header' %}
         </header>
-        {% partial 'site/navbar' %}
         {% partial 'site/topnavbar' %}
+       
 
         <!-- Content -->
         <section id=\"layout-content home-content\">
@@ -178,7 +174,7 @@ class __TwigTemplate_e9a8ea00578e4ed9758843ca8032af26980c0e6219970093ca74f450997
 
         <!-- Footer -->
         <footer id=\"layout-footer\">
-            {% partial 'site/Footer' %}
+            {% partial 'site/footer' %}
         </footer>
 
         <!-- Scripts -->

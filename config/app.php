@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost/october/',
+    'url' => 'http://locahost/techmix',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'key' => 'gVpT4rk33ZJm4EBu86VMw6VCmFAKfbmE',
+    'key' => 'JIYSETYjXr3mEFQxawu7gA1R4FTFoiYL',
 
     'cipher' => 'AES-256-CBC',
 

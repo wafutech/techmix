@@ -1,0 +1,49 @@
+==
+description = "Timeline layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TechMix - {{ this.page.title }}</title>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="Wafutech">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="TechMix">
+        <link rel="icon" type="image/png" href="{{ 'assets/images/wafutech.png'|theme }}">
+        <link href="{{ 'assets/css/main.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/css/bootstrap.min.css'|theme }}" rel="stylesheet">
+         <link href="{{ 'assets/css/poper.min.css'|theme }}" rel="stylesheet">
+        {% styles %}
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header id="layout-header">
+            {% partial 'site/header' %}
+        </header>
+        {% partial 'timeline/navbar' %}
+        <br><br>
+
+        <!-- Content -->
+        <section id="layout-content">            
+            {% page %}
+               
+        </section>
+
+        <!-- Footer -->
+        <footer id="layout-footer">
+            {% partial 'site/Footer' %}
+        </footer>
+
+        <!-- Scripts -->
+        <script src="{{ 'assets/javascript/jquery.js'|theme }}"></script>
+        <script src="{{ 'assets/javascript/bootstrap.js'|theme }}"></script>
+        <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+
+    </body>
+</html>

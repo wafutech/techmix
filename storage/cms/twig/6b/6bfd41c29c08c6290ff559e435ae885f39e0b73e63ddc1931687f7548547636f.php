@@ -17,62 +17,67 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
     {
         // line 1
         echo "<div id=\"flipkart-navbar\">
-        <div class=\"container\">       
+        <div class=\"container\"> 
+        <div class=\"row\">  
+          <div class=\"col-md-12\">
+            <p>Top Navigation Bar</p>
+          </div>
+        </div>    
         <div class=\"row row1\">
             <ul class=\"largenav pull-right\">               
                 <li class=\"upper-links";
-        // line 5
+        // line 10
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "questions")) {
             echo "active ";
         }
         echo "\">
               <a href=\"";
-        // line 6
+        // line 11
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("questions/questions");
         echo "\" class=\"links\">Questions</a>
               </li>
                 <li class=\"upper-links";
-        // line 8
+        // line 13
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "posts")) {
             echo "active ";
         }
         echo "\">
               <a href=\"";
-        // line 9
+        // line 14
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("freelancer/findwork");
         echo "\" class=\"links\">Find Work</a>
               </li>
               <li class=\"upper-links";
-        // line 11
+        // line 16
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "posts")) {
             echo "active ";
         }
         echo "\">
               <a href=\"";
-        // line 12
+        // line 17
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("freelancer/postwork");
         echo "\" class=\"links\">Post Work</a>
               </li>          
 
                 <li class=\"upper-links";
-        // line 15
+        // line 20
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "posts")) {
             echo "active ";
         }
         echo "\">
               <a href=\"";
-        // line 16
+        // line 21
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("blog/posts");
         echo "\" class=\"links\">Blog</a>
               </li>
               <li class=\"upper-links";
-        // line 18
+        // line 23
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "store")) {
             echo "active ";
         }
         echo "\">
               <a href=\"";
-        // line 19
+        // line 24
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("store/home");
         echo "\" class=\"links\">Store Room</a>
               </li>
@@ -92,7 +97,7 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
         </div>
         <div class=\"row row2\">
             <div class=\"col-sm-2\">
-                <h2 style=\"margin:0px;\"><span class=\"smallnav menu\" onclick=\"openNav()\">☰ Brand</span></h2>
+                <h2 style=\"margin:0px;\"><span class=\"smallnav menu\" onclick=\"openNav()\">TechMix Logo</span></h2>
             </div>
             <div class=\"flipkart-navbar-search smallsearch col-sm-8 col-xs-11\">
                 <div class=\"row\">
@@ -132,13 +137,18 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
 
     public function getDebugInfo()
     {
-        return array (  76 => 19,  70 => 18,  65 => 16,  59 => 15,  53 => 12,  47 => 11,  42 => 9,  36 => 8,  31 => 6,  25 => 5,  19 => 1,);
+        return array (  81 => 24,  75 => 23,  70 => 21,  64 => 20,  58 => 17,  52 => 16,  47 => 14,  41 => 13,  36 => 11,  30 => 10,  19 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("<div id=\"flipkart-navbar\">
-        <div class=\"container\">       
+        <div class=\"container\"> 
+        <div class=\"row\">  
+          <div class=\"col-md-12\">
+            <p>Top Navigation Bar</p>
+          </div>
+        </div>    
         <div class=\"row row1\">
             <ul class=\"largenav pull-right\">               
                 <li class=\"upper-links{% if( this.page.id == 'questions') %}active {% endif %}\">
@@ -173,7 +183,7 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
         </div>
         <div class=\"row row2\">
             <div class=\"col-sm-2\">
-                <h2 style=\"margin:0px;\"><span class=\"smallnav menu\" onclick=\"openNav()\">☰ Brand</span></h2>
+                <h2 style=\"margin:0px;\"><span class=\"smallnav menu\" onclick=\"openNav()\">TechMix Logo</span></h2>
             </div>
             <div class=\"flipkart-navbar-search smallsearch col-sm-8 col-xs-11\">
                 <div class=\"row\">

@@ -16,7 +16,7 @@ class __TwigTemplate_8e6f3338ae89bf3cd5dbd944c9ecdf930144809a5906d77eee93393dd83
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<div id=\"footer\">
+        echo "<div class=\"footer-top\">
 \t<script src=\"";
         // line 2
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter(array(0 => "assets/javascript/jquery.js", 1 => "assets/javascript/bootstrap.min.js", 2 => "assets/javascript/clean-blog.min.js"));
@@ -96,7 +96,7 @@ class __TwigTemplate_8e6f3338ae89bf3cd5dbd944c9ecdf930144809a5906d77eee93393dd83
         <hr>
 <!--Footer bottom-->
          <div class=\"row\">
-        \t<div class=\"col-md-12\">
+        \t<div class=\"col-md-12 footer-copyright\">
         <p class=\"muted credit\">&copy;  ";
         // line 77
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
@@ -125,7 +125,7 @@ class __TwigTemplate_8e6f3338ae89bf3cd5dbd944c9ecdf930144809a5906d77eee93393dd83
 
     public function getSourceContext()
     {
-        return new Twig_Source("<div id=\"footer\">
+        return new Twig_Source("<div class=\"footer-top\">
 \t<script src=\"{{ [
       'assets/javascript/jquery.js',
     'assets/javascript/bootstrap.min.js',
@@ -200,7 +200,7 @@ class __TwigTemplate_8e6f3338ae89bf3cd5dbd944c9ecdf930144809a5906d77eee93393dd83
         <hr>
 <!--Footer bottom-->
          <div class=\"row\">
-        \t<div class=\"col-md-12\">
+        \t<div class=\"col-md-12 footer-copyright\">
         <p class=\"muted credit\">&copy;  {{ \"now\"|date(\"Y\") }} Wafutech &amp; Full-Stack Developer.</p>
         \t</div>
         </div>
