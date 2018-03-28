@@ -105,7 +105,11 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
         </div>
         <div class=\"row row2\">
             <div class=\"col-sm-2\">
-                <h3 style=\"margin:0px;\"><span class=\"smallnav menu\" onclick=\"openNav()\">TechMix Logo</span><small>Technology Reigns</small></h3>
+                <h3 style=\"margin:0px;\"><span class=\"smallnav menu\" onclick=\"openNav()\"><img src=\"";
+        // line 42
+        echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/images/wafutech.png");
+        echo "\" type=\"image/png\" alt=\"LOGO\" width=\"60\" height=\"65\"></span></h3>
+                <p class=\"motto\">Technology Reigns</p>
             </div>
             <div class=\"flipkart-navbar-search smallsearch col-sm-8 col-xs-11\">
                 <div class=\"row\">
@@ -143,80 +147,80 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
       <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">
       <ul class=\"nav navbar-nav\">
         <li class=\"";
-        // line 79
+        // line 80
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "about")) {
             echo "active ";
         }
         echo "\">
       <a href=\"";
-        // line 80
+        // line 81
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("about");
         echo "\">How it Works</a>
   </li>
   <li class=\"";
-        // line 82
+        // line 83
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "questions")) {
             echo "active ";
         }
         echo "\">
               <a href=\"";
-        // line 83
+        // line 84
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("questions/questions");
         echo "\" class=\"links\">Questions</a>
               </li>
 
     <li class=\"";
-        // line 86
+        // line 87
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "freelance")) {
             echo "active ";
         }
         echo "\">
       <a href=\"";
-        // line 87
+        // line 88
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("freelance/freelance");
         echo "\">Programming Jobs</a>
   </li>
   <li class=\"";
-        // line 89
+        // line 90
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "freelance")) {
             echo "active ";
         }
         echo "\">
       <a href=\"";
-        // line 90
+        // line 91
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("freelance/freelance");
         echo "\">Software Store</a>
   </li>
   <li class=\"";
-        // line 92
+        // line 93
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "freelance")) {
             echo "active ";
         }
         echo "\">
       <a href=\"";
-        // line 93
+        // line 94
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("freelance/freelance");
         echo "\">Blogging</a>
   </li>
   <li class=\"";
-        // line 95
+        // line 96
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "freelance")) {
             echo "active ";
         }
         echo "\">
       <a href=\"";
-        // line 96
+        // line 97
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("freelance/freelance");
         echo "\">Become A programmer</a>
   </li>
    <li class=\"";
-        // line 98
+        // line 99
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "freelance")) {
             echo "active ";
         }
         echo "\">
       <a href=\"";
-        // line 99
+        // line 100
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("freelance/freelance");
         echo "\">Get Social</a>
   </li>
@@ -283,7 +287,7 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
 
     public function getDebugInfo()
     {
-        return array (  220 => 99,  214 => 98,  209 => 96,  203 => 95,  198 => 93,  192 => 92,  187 => 90,  181 => 89,  176 => 87,  170 => 86,  164 => 83,  158 => 82,  153 => 80,  147 => 79,  88 => 23,  82 => 22,  77 => 20,  71 => 19,  66 => 17,  60 => 16,  54 => 13,  48 => 12,  43 => 10,  37 => 9,  32 => 7,  26 => 6,  19 => 1,);
+        return array (  224 => 100,  218 => 99,  213 => 97,  207 => 96,  202 => 94,  196 => 93,  191 => 91,  185 => 90,  180 => 88,  174 => 87,  168 => 84,  162 => 83,  157 => 81,  151 => 80,  110 => 42,  88 => 23,  82 => 22,  77 => 20,  71 => 19,  66 => 17,  60 => 16,  54 => 13,  48 => 12,  43 => 10,  37 => 9,  32 => 7,  26 => 6,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -329,7 +333,8 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
         </div>
         <div class=\"row row2\">
             <div class=\"col-sm-2\">
-                <h3 style=\"margin:0px;\"><span class=\"smallnav menu\" onclick=\"openNav()\">TechMix Logo</span><small>Technology Reigns</small></h3>
+                <h3 style=\"margin:0px;\"><span class=\"smallnav menu\" onclick=\"openNav()\"><img src=\"{{ 'assets/images/wafutech.png' |theme }}\" type=\"image/png\" alt=\"LOGO\" width=\"60\" height=\"65\"></span></h3>
+                <p class=\"motto\">Technology Reigns</p>
             </div>
             <div class=\"flipkart-navbar-search smallsearch col-sm-8 col-xs-11\">
                 <div class=\"row\">

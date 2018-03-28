@@ -6,6 +6,16 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
 @import url(http://fonts.googleapis.com/css?family=Abel);
 
+/*LOGO*/
+p.motto
+{
+  font-size: 10px;
+  font-style: italic;
+  padding-top: 0px;
+  position: relative;
+  top: 100;
+  left: 100;
+}
 .row1{
     padding-top: 10px;
 }

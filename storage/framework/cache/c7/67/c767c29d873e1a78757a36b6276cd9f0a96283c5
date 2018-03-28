@@ -1,4 +1,4 @@
-1522220635a:1:{s:15:"site/navbar.htm";a:5:{s:8:"fileName";s:15:"site/navbar.htm";s:7:"content";s:7996:"<div id="flipkart-navbar">
+1522249663a:1:{s:15:"site/navbar.htm";a:5:{s:8:"fileName";s:15:"site/navbar.htm";s:7:"content";s:8112:"<div id="flipkart-navbar">
         <div class="container"> 
            
         <div class="row row1">
@@ -39,7 +39,8 @@
         </div>
         <div class="row row2">
             <div class="col-sm-2">
-                <h3 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">TechMix Logo</span><small>Technology Reigns</small></h3>
+                <h3 style="margin:0px;"><span class="smallnav menu" onclick="openNav()"><img src="{{ 'assets/images/wafutech.png' |theme }}" type="image/png" alt="LOGO" width="60" height="65"></span></h3>
+                <p class="motto">Technology Reigns</p>
             </div>
             <div class="flipkart-navbar-search smallsearch col-sm-8 col-xs-11">
                 <div class="row">
@@ -146,7 +147,7 @@
       </ul>
     </div><!-- /.navbar-collapse -->
     </div>
-  </nav>";s:5:"mtime";i:1522169297;s:6:"markup";s:7996:"<div id="flipkart-navbar">
+  </nav>";s:5:"mtime";i:1522222506;s:6:"markup";s:8112:"<div id="flipkart-navbar">
         <div class="container"> 
            
         <div class="row row1">
@@ -187,7 +188,8 @@
         </div>
         <div class="row row2">
             <div class="col-sm-2">
-                <h3 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">TechMix Logo</span><small>Technology Reigns</small></h3>
+                <h3 style="margin:0px;"><span class="smallnav menu" onclick="openNav()"><img src="{{ 'assets/images/wafutech.png' |theme }}" type="image/png" alt="LOGO" width="60" height="65"></span></h3>
+                <p class="motto">Technology Reigns</p>
             </div>
             <div class="flipkart-navbar-search smallsearch col-sm-8 col-xs-11">
                 <div class="row">
