@@ -1,0 +1,10 @@
+name: Tags
+form: $/wafutech/stackexchange/models/tag/createtag.yaml
+modelClass: Wafutech\Stackexchange\Models\Tag
+defaultRedirect: wafutech/stackexchange/tags
+create:
+    redirect: 'wafutech/stackexchange/tags/update/:id'
+    redirectClose: wafutech/stackexchange/tags
+update:
+    redirect: wafutech/stackexchange/tags
+    redirectClose: wafutech/stackexchange/tags

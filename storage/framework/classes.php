@@ -127,4 +127,6 @@
   'Flynsarmy\\SocialLogin\\Models\\Provider' => 'plugins\\flynsarmy\\sociallogin\\models\\Provider.php',
   'mohsin\\rest\\Plugin' => 'plugins\\mohsin\\rest\\Plugin.php',
   'ahmadfatoni\\apigenerator\\Plugin' => 'plugins\\ahmadfatoni\\apigenerator\\Plugin.php',
+  'wafutech\\stackexchange\\Controllers\\tags' => 'plugins\\wafutech\\stackexchange\\controllers\\tags.php',
+  'Wafutech\\Stackexchange\\Models\\Tag' => 'plugins\\wafutech\\stackexchange\\models\\Tag.php',
 );

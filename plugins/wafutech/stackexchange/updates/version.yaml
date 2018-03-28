@@ -9,3 +9,12 @@
 1.0.2:
     - 'Created table wafutech_stackexchange_useful_answers'
     - builder_table_create_wafutech_stackexchange_useful_answers.php
+1.0.3:
+    - 'Created table wafutech_stackexchange_tags'
+    - builder_table_create_wafutech_stackexchange_tags.php
+1.0.4:
+    - 'Updated table wafutech_stackexchange_tags'
+    - builder_table_update_wafutech_stackexchange_tags.php
+1.0.5:
+    - 'Created table wafutech_stackexchange_question_tags'
+    - builder_table_create_wafutech_stackexchange_question_tags.php

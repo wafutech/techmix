@@ -1,0 +1,11 @@
+fields:
+    tag:
+        label: Tag
+        span: auto
+        required: 1
+        type: text
+    approved:
+        label: Approved
+        span: auto
+        required: 1
+        type: switch

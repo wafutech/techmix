@@ -4,3 +4,8 @@ plugin:
     author: wafutech
     icon: oc-icon-asterisk
     homepage: ''
+navigation:
+    stack-exchange:
+        label: 'Stack Exchange'
+        url: wafutech/stackexchange/tags
+        icon: icon-question-circle

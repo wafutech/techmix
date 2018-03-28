@@ -1,0 +1,11 @@
+columns:
+    tag:
+        label: Tag
+        type: text
+        searchable: true
+        sortable: true
+    approved:
+        label: Status
+        type: text
+        searchable: true
+        sortable: true
