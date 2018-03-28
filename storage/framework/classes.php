@@ -125,4 +125,6 @@
   'RainLab\\User\\Classes\\AuthManager' => 'plugins\\rainlab\\user\\classes\\AuthManager.php',
   'wafutech\\stackexchange\\Plugin' => 'plugins\\wafutech\\stackexchange\\Plugin.php',
   'Flynsarmy\\SocialLogin\\Models\\Provider' => 'plugins\\flynsarmy\\sociallogin\\models\\Provider.php',
+  'mohsin\\rest\\Plugin' => 'plugins\\mohsin\\rest\\Plugin.php',
+  'ahmadfatoni\\apigenerator\\Plugin' => 'plugins\\ahmadfatoni\\apigenerator\\Plugin.php',
 );
