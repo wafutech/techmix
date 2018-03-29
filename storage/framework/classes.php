@@ -129,4 +129,10 @@
   'ahmadfatoni\\apigenerator\\Plugin' => 'plugins\\ahmadfatoni\\apigenerator\\Plugin.php',
   'wafutech\\stackexchange\\Controllers\\tags' => 'plugins\\wafutech\\stackexchange\\controllers\\tags.php',
   'Wafutech\\Stackexchange\\Models\\Tag' => 'plugins\\wafutech\\stackexchange\\models\\Tag.php',
+  'Wafutech\\Stackexchange\\Controllers\\Tags' => 'plugins\\wafutech\\stackexchange\\controllers\\Tags.php',
+  'Wafutech\\Stackexchange\\Controllers\\Questions' => 'plugins\\wafutech\\stackexchange\\controllers\\Questions.php',
+  'Wafutech\\Stackexchange\\Models\\Question' => 'plugins\\wafutech\\stackexchange\\models\\Question.php',
+  'Wafutech\\Stackexchange\\Models\\QuestionTag' => 'plugins\\wafutech\\stackexchange\\models\\QuestionTag.php',
+  'Wafutech\\Stackexchange\\Controllers\\QuestionCategories' => 'plugins\\wafutech\\stackexchange\\controllers\\QuestionCategories.php',
+  'Wafutech\\Stackexchange\\Models\\QuestionCategory' => 'plugins\\wafutech\\stackexchange\\models\\QuestionCategory.php',
 );

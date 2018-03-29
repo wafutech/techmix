@@ -19,4 +19,5 @@ class Tag extends Model
      * @var string The database table used by the model.
      */
     public $table = 'wafutech_stackexchange_tags';
+    protected $fillable = ['tag','approved'];
 }
