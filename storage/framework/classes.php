@@ -135,4 +135,8 @@
   'Wafutech\\Stackexchange\\Models\\QuestionTag' => 'plugins\\wafutech\\stackexchange\\models\\QuestionTag.php',
   'Wafutech\\Stackexchange\\Controllers\\QuestionCategories' => 'plugins\\wafutech\\stackexchange\\controllers\\QuestionCategories.php',
   'Wafutech\\Stackexchange\\Models\\QuestionCategory' => 'plugins\\wafutech\\stackexchange\\models\\QuestionCategory.php',
+  'Wafutech\\Stackexchange\\Controllers\\Answers' => 'plugins\\wafutech\\stackexchange\\controllers\\Answers.php',
+  'Wafutech\\Stackexchange\\Models\\Answer' => 'plugins\\wafutech\\stackexchange\\models\\Answer.php',
+  'Wafutech\\Stackexchange\\Models\\Usefulanswer' => 'plugins\\wafutech\\stackexchange\\models\\Usefulanswer.php',
+  'Wafutech\\Stackexchange\\Models\\QuestionVote' => 'plugins\\wafutech\\stackexchange\\models\\QuestionVote.php',
 );

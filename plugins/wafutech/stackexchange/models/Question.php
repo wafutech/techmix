@@ -25,7 +25,8 @@ class Question extends Model
      protected $fillable = ['question','question_detail','category_id','user_id'];
  public $hasOne = ['user'=>'RainLab\User\Models\User'];
 
-    public $hasMany = ['answers'      => '\wafutech\Questions\Models\Answer'];
+    public $hasMany = ['answers'      => 'Wafutech\Stackexchange\Models\Answer','tags'      => 'Wafutech\Stackexchange\Models\QuestionTag','votes'=>'Wafutech\Stackexchange\Models\QuestionVote'];
+    
 
     public $belongsTo = ['user'=>'RainLab\User\Models\User','questionCategory'=>'\wafutech\Questions\Models\QuestionCategory'];
 

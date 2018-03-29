@@ -4,14 +4,14 @@ use BackendMenu;
 use Backend\Classes\Controller;
 use Wafutech\Stackexchange\Models\Question as Question;
 use Wafutech\Stackexchange\Models\QuestionTag as QuestionTag;
+use Wafutech\Stackexchange\Models\QuestionVote as QuestionVote;
 
 use Illuminate\Http\Request as Request;
 use Validator;
 use Illuminate\Support\Facades\Input;
 use DB;
 use BackendAuth;
-use Auth;
-
+use October\Rain\Database\ModelException; use RainLab\User\Facades\Auth
 use RainLab\User\Classes\AuthManager\User as User;
 
 /**
@@ -98,11 +98,12 @@ class Questions extends Controller
 
     public function show($id)
     {
-        $question = DB::table('wafutech_stackexchange_questions')
+        /*$question = DB::table('wafutech_stackexchange_questions')
         ->join('wafutech_stackexchange_question_categories','wafutech_stackexchange_questions.category_id','wafutech_stackexchange_questions.category_id','wafutech_stackexchange_question_categories.id')
         ->join('wafutech_stackexchange_question_tags','wafutech_stackexchange_questions.id','wafutech_stackexchange_question_tags.question_id','wafutech_stackexchange_questions.id')
         ->where('wafutech_stackexchange_questions.id',$id)
-        ->first();
+        ->first();*/
+        $question = Question::with(['answers','tags'])->where('wafutech_stackexchange_questions.id',$id)->first();
 
         return $question;
     }
@@ -121,4 +122,34 @@ class Questions extends Controller
         $question->delete();
         return 'Question removed by'.BackendAuth::getUser()->id;
     }
+
+    //Fetch questions with answers
+    public function questionsWithAnswers()
+    {
+        $questions = Question::with('answers')->get();
+        return $questions;
+    }
+
+    //Vote on questions
+
+    public function questionVote($id)
+    {
+       $votes = 1;
+        $alreadyVoted = QuestionVote::where(['question_id',$id,'user_id',1])->first();
+        if($alreadyVoted)
+        {
+            return 'You already voted on this question';
+        }
+
+        $vote = new QuestionVote;
+        $vote->question_id = $id;
+        $vote->user_id = 1;
+        $vote->vote = $votes;
+        $vote->save();
+
+        return 'Voting Successful';
+
+
+    }
+
 }

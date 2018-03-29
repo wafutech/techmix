@@ -24,4 +24,9 @@ class Question extends Controller
 
         BackendMenu::setContext('Wafutech.Stackexchange', 'stackexchange', 'question');
     }
+
+    public function answers()
+    {
+        return $this->hasMany('Wafutech\Stackexchange\Models\Answer');
+    }
 }

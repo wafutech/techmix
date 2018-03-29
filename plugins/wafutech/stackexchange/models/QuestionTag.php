@@ -26,4 +26,9 @@ class QuestionTag extends Model
      */
     public $table = 'wafutech_stackexchange_question_tags';
     protected $fillable =['question_id','tag_id'];
+
+     public $hasOne = ['question'=>'Wafutech\Stackexchange\Models\Question'];
+
+
+
 }

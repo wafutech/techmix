@@ -1,5 +1,6 @@
 <?php
 use Wafutech\Stackexchange\Controllers\Tags;
+use Wafutech\Stackexchange\Models\QuestionTag as QuestionTag;
 //Pass the route to index action in Tags Controller and retrive all question tags;
 Route::get('api/tags','Wafutech\Stackexchange\Controllers\Tags@index');
 
@@ -63,6 +64,11 @@ Route::put('apiv1/question/categories/{id}',
 
 Route::delete('apiv1/question/categories/{id}',
 	'Wafutech\Stackexchange\Controllers\QuestionCategories@destroy');
+Route::get('apiv1/question/withanswers',
+	'Wafutech\Stackexchange\Controllers\Questions@questionsWithAnswers');
+
+Route::get('apiv1/question/votes/{id}',
+	'Wafutech\Stackexchange\Controllers\Questions@questionVote');
 
 /*-------------------------
 * STACK QUESTIONS ANSWERS API ROUTES
@@ -88,6 +94,14 @@ Route::get('apiv1/question/answers/useful/{id}',
 //Accept answer
 Route::get('apiv1/question/answers/accepted/{id}',
 	'Wafutech\Stackexchange\Controllers\Answers@acceptedAnswer');
+
+//check for question tags if actually exists
+
+/*Route::get('apiv1/question/tags',function()
+{
+$tags = QuestionTag::all();
+return $tags;
+});*/
 
 
 

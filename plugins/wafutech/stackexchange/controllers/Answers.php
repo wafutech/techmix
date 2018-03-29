@@ -4,12 +4,11 @@ use Backend\Classes\Controller;
 use BackendMenu;
 use Wafutech\Stackexchange\Models\Answer as Answer;
 use Wafutech\Stackexchange\Models\Usefulanswer as Usefulanswer;
-
-
-use Illuminate\Http\Request as Request;
-use Validator;
 use Illuminate\Support\Facades\Input;
+use Validator;
+use Illuminate\Http\Request as Request;
 use DB;
+use Auth;
 
 class Answers extends Controller
 {
@@ -26,6 +25,20 @@ class Answers extends Controller
     public function newAnswer(Request $request)
 
     {
+    	$rules =
+    	[
+    		'answer'=>'required|unique:wafutech_stackexchange_answers',
+    	];
+
+    	 $validator = Validator::make(Input::all(), $rules);
+
+     // Return back to form w/ validation errors & session data as input
+
+     if($validator->fails()) {
+        return $validator->messages();
+
+    }
+
     	$answer = new Answer;
     	$answer->question_id = $request->question_id;
     	$answer->user_id = 1;
@@ -40,7 +53,7 @@ class Answers extends Controller
 
     //Owners of the answers or other users with permissions to edit other people's answers can do so.
 
-    public function updateAnswer(Request $request)
+    public function updateAnswer(Request $request,$id)
     {
     	//Fetch new input data
     	$input = $request->all();
@@ -66,45 +79,59 @@ class Answers extends Controller
     	return 'Answer removed!';
     }
 
-    public function acceptedAnswer(Request $request)
+    public function acceptedAnswer(Request $request,$id)
     {
     	//Method marks the answer as accepted. The only user with permission to do this the owner of the question
+    	
+    $user = 2;//Auth::getUser()->id;
+    $question = Answer::findOrFail($id);
 
-    $user = Auth::getUser()->id;
     $answer = DB::table('wafutech_stackexchange_answers')
     ->join('wafutech_stackexchange_questions','wafutech_stackexchange_answers.question_id','wafutech_stackexchange_questions.id','wafutech_stackexchange_answers.question_id')
     ->first();
-    if($user==$answer->user_id and $request->question_id==$answer->question_id)
+
+    if($user==$answer->user_id and $question->question_id==$answer->question_id)
     {
+    	//First the question already has accepted answer
+
+    $alreadyAccepted = Answer::where('question_id',$question->question_id)->where('accepted',1);
+    if($alreadyAccepted)
+    {
+    	return 'You already accepted an answer for this question';
+    }
     	//Then update the answer as accepted
-    $answer = Answer::findOrFail($request->answer_id);
-    $answer->accepted->update(1);
+    	DB::update('update wafutech_stackexchange_answers set accepted=? where id =?',[1,$id]); 
+    
 
     //Fire some events to inform the author of the answer that has been accepted and has earned him some reputation points
     //Event::Fire(some event)
     return 'You accepted the answer, question closed! thank you for joining TechMix';
 
     }
+
+    return 'Only the author of the question can mark answer as accepted';
     
 
 
     }
 
-    public function usefulAnswer(Request $request)
+    public function usefulAnswer(Request $request,$id)
 
     {
-    	$doubleEndorsement = Usefulanswer::where('user_id',Auth::getUser()->id)
-    		->where('question_id',$request->question_id)
+    	$answer = Answer::findOrFail($id);
+
+    	$doubleEndorsement = Usefulanswer::where('user_id',1)
+    		->where('question_id',$answer->question_id)
     		->get();
-    		if($doubleEndorsement)
+    		if(count($doubleEndorsement)!=0)
     		{
     			return 'You cannot endorse same answer twice or more than one answer on the same question';
     		}
 
     		$usefulAnswer = new Usefulanswer;
-    		$usefulAnswer->user_id =Auth::getUser()->id;
-    		$usefulAnswer->question_id = $request->question_id;
-    		$usefulAnswer->answer_id = $request->answer_id;
+    		$usefulAnswer->user_id =1;
+    		$usefulAnswer->question_id = $answer->question_id;
+    		$usefulAnswer->answer_id = $id;
     		$usefulAnswer->save();
 
     		//Fire some notification events and rps update events
