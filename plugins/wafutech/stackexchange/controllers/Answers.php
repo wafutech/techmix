@@ -4,11 +4,15 @@ use Backend\Classes\Controller;
 use BackendMenu;
 use Wafutech\Stackexchange\Models\Answer as Answer;
 use Wafutech\Stackexchange\Models\Usefulanswer as Usefulanswer;
+use Wafutech\Stackexchange\Models\Question as Question;
 use Illuminate\Support\Facades\Input;
 use Validator;
 use Illuminate\Http\Request as Request;
 use DB;
-use Auth;
+use Event;
+use Wafutech\Stackexchange\Classes\Events\AnswerPostedEvent;
+use October\Rain\Database\ModelException; use RainLab\User\Facades\Auth;
+use RainLab\User\Classes\AuthManager\User as User;
 
 class Answers extends Controller
 {
@@ -45,7 +49,12 @@ class Answers extends Controller
     	$answer->answer = $request->answer;
     	$answer->save();
     	//Fire stack exchange response event
+        //Get question details object
+        $question = Question::where('id',$request->question_id)->first();
+
+        Event::fire(new AnswerPostedEvent($question));
     	//Then pass back the posted answer to the view for immediate rendering with an ajax call
+
     	return $answer->answer;
 
 
@@ -83,7 +92,7 @@ class Answers extends Controller
     {
     	//Method marks the answer as accepted. The only user with permission to do this the owner of the question
     	
-    $user = 2;//Auth::getUser()->id;
+    $user = 1;//Auth::getUser()->id;
     $question = Answer::findOrFail($id);
 
     $answer = DB::table('wafutech_stackexchange_answers')

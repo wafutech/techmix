@@ -1,4 +1,4 @@
-1522336815a:1:{s:9:"index.htm";a:8:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:9782:"title = "Home Page"
+1523545795a:1:{s:9:"index.htm";a:8:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:9892:"title = "Home Page"
 url = "/"
 layout = "master"
 ==
@@ -7,6 +7,11 @@ layout = "master"
     <div class="container">
         {% content "welcome.htm" %}
     </div>
+    {% if user %}
+    <p>Hello {{ user.name }}</p>
+{% else %}
+    <p>Nobody is logged in</p>
+{% endif %}
 </div>
 
 <div class="container">
@@ -226,10 +231,15 @@ layout = "master"
     </div>
 
 </div>
-";s:5:"mtime";i:1522047965;s:6:"markup";s:9723:"<div class="jumbotron">
+";s:5:"mtime";i:1522398850;s:6:"markup";s:9833:"<div class="jumbotron">
     <div class="container">
         {% content "welcome.htm" %}
     </div>
+    {% if user %}
+    <p>Hello {{ user.name }}</p>
+{% else %}
+    <p>Nobody is logged in</p>
+{% endif %}
 </div>
 
 <div class="container">

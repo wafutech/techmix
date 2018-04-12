@@ -1,4 +1,4 @@
-1522336815a:1:{s:9:"login.htm";a:11:{s:8:"fileName";s:9:"login.htm";s:7:"content";s:211:"title = "Login"
+1523545795a:1:{s:9:"login.htm";a:11:{s:8:"fileName";s:9:"login.htm";s:7:"content";s:219:"title = "Login"
 url = "/login"
 layout = "master"
 description = "User login page"
@@ -9,4 +9,5 @@ redirect = "timeline/timeline"
 paramCode = "code"
 forceSecure = 0
 ==
-{% component 'account' %}";s:5:"mtime";i:1521992167;s:6:"markup";s:25:"{% component 'account' %}";s:4:"code";N;s:5:"title";s:5:"Login";s:3:"url";s:6:"/login";s:6:"layout";s:6:"master";s:11:"description";s:15:"User login page";s:9:"is_hidden";s:1:"0";s:7:"account";a:3:{s:8:"redirect";s:17:"timeline/timeline";s:9:"paramCode";s:4:"code";s:11:"forceSecure";s:1:"0";}}}
+ {% partial 'account/signin' %}
+";s:5:"mtime";i:1523463499;s:6:"markup";s:30:"{% partial 'account/signin' %}";s:4:"code";N;s:5:"title";s:5:"Login";s:3:"url";s:6:"/login";s:6:"layout";s:6:"master";s:11:"description";s:15:"User login page";s:9:"is_hidden";s:1:"0";s:7:"account";a:3:{s:8:"redirect";s:17:"timeline/timeline";s:9:"paramCode";s:4:"code";s:11:"forceSecure";s:1:"0";}}}

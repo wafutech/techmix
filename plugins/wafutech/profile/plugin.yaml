@@ -1,0 +1,6 @@
+plugin:
+    name: 'wafutech.profile::lang.plugin.name'
+    description: 'wafutech.profile::lang.plugin.description'
+    author: wafutech
+    icon: oc-icon-user
+    homepage: ''

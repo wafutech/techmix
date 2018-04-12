@@ -3,8 +3,12 @@ url = "/updates"
 layout = "timeline"
 description = "The about page"
 is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
 ==
-<div class="tab-content">
+{% component 'session' %}<div class="tab-content">
 	<!--TIMELINE UPDATES TAB-->
 	<div class="tab-pane fade in active" id="tab1default">
 		<div class="row">

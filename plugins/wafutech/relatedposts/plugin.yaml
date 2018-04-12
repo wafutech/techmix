@@ -1,0 +1,6 @@
+plugin:
+    name: 'wafutech.relatedposts::lang.plugin.name'
+    description: 'wafutech.relatedposts::lang.plugin.description'
+    author: wafutech
+    icon: oc-icon-pencil-square
+    homepage: ''

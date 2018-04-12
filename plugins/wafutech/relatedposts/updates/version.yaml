@@ -1,0 +1,5 @@
+1.0.1:
+    - Initialize plugin.
+1.0.2:
+    - Add category id on rainlab_blog_table
+    - create_rainlab_blog_posts_table.php

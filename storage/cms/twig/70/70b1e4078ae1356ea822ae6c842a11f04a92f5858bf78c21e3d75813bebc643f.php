@@ -24,10 +24,93 @@ class __TwigTemplate_d30dfcf14661dfe052d5711fe5f4f13a4920815eb2c76551b70f26b9026
         echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("welcome.htm"        , $context['__cms_content_params']        );
         unset($context['__cms_content_params']);
         // line 4
-        echo "
+        echo "            
     </div>
+    ";
+        // line 6
+        if (($context["user"] ?? null)) {
+            // line 7
+            echo "    <p>Hello ";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["user"] ?? null), "name", array()), "html", null, true);
+            echo "</p>
+";
+        } else {
+            // line 9
+            echo "  
+
+
+                <span class=\"omb_spanOr\">or</span>
+            </div>
+        </div>
+
+        <div class=\"row omb_row-sm-offset-3\">
+            <div class=\"col-xs-12 col-sm-6\">    
+                <form class=\"omb_loginForm\" action=\"\" autocomplete=\"off\" method=\"POST\">
+                    <div class=\"input-group\">
+                        <span class=\"input-group-addon\"><i class=\"fa fa-user\"></i></span>
+                        <input type=\"text\" class=\"form-control\" name=\"username\" placeholder=\"email address\">
+                    </div>
+                    <span class=\"help-block\"></span>
+                                        
+                    <div class=\"input-group\">
+                        <span class=\"input-group-addon\"><i class=\"fa fa-lock\"></i></span>
+                        <input  type=\"password\" class=\"form-control\" name=\"password\" placeholder=\"Password\">
+                    </div>
+                    <span class=\"help-block\">Password error</span>
+
+                    <button class=\"btn btn-lg btn-primary btn-block\" type=\"submit\">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class=\"row omb_row-sm-offset-3\">
+            <div class=\"col-xs-12 col-sm-3\">
+                <label class=\"checkbox\">
+                    <input type=\"checkbox\" value=\"remember-me\">Remember Me
+                </label>
+            </div>
+            <div class=\"col-xs-12 col-sm-3\">
+                <p class=\"omb_forgotPwd\">
+                    <a href=\"#\">Forgot password?</a>
+                </p>
+            </div>
+        </div>          
+    </div>
+<div class=\"container\">
     
-</div>
+
+    <div class=\"omb_login\">
+        <h3 class=\"omb_authTitle\">Login or <a href=\"#\">Sign up</a></h3>
+        <div class=\"row omb_row-sm-offset-3 omb_socialButtons\">
+            <div class=\"col-xs-4 col-sm-2\">
+                <a href=\"#\" class=\"btn btn-lg btn-block omb_btn-facebook\">
+                    <i class=\"fa fa-facebook visible-xs\"></i>
+                    <span class=\"hidden-xs\">Facebook</span>
+                </a>
+            </div>
+            <div class=\"col-xs-4 col-sm-2\">
+                <a href=\"#\" class=\"btn btn-lg btn-block omb_btn-twitter\">
+                    <i class=\"fa fa-twitter visible-xs\"></i>
+                    <span class=\"hidden-xs\">Twitter</span>
+                </a>
+            </div>  
+            <div class=\"col-xs-4 col-sm-2\">
+                <a href=\"#\" class=\"btn btn-lg btn-block omb_btn-google\">
+                    <i class=\"fa fa-google-plus visible-xs\"></i>
+                    <span class=\"hidden-xs\">Google+</span>
+                </a>
+            </div>  
+        </div>
+
+        <div class=\"row omb_row-sm-offset-3 omb_loginOr\">
+            <div class=\"col-xs-12 col-sm-6\">
+                <hr class=\"omb_hrOr\">
+
+
+        </div>
+";
+        }
+        // line 81
+        echo "</div>
 
 <div class=\"container\">
 
@@ -243,7 +326,7 @@ class __TwigTemplate_d30dfcf14661dfe052d5711fe5f4f13a4920815eb2c76551b70f26b9026
 
     <div class=\"text-center\">
         <p><a href=\"";
-        // line 222
+        // line 296
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("ajax");
         echo "\" class=\"btn btn-lg btn-default\">Continue to AJAX framework</a></p>
     </div>
@@ -263,7 +346,7 @@ class __TwigTemplate_d30dfcf14661dfe052d5711fe5f4f13a4920815eb2c76551b70f26b9026
 
     public function getDebugInfo()
     {
-        return array (  247 => 222,  27 => 4,  23 => 3,  19 => 1,);
+        return array (  330 => 296,  113 => 81,  39 => 9,  33 => 7,  31 => 6,  27 => 4,  23 => 3,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -271,9 +354,83 @@ class __TwigTemplate_d30dfcf14661dfe052d5711fe5f4f13a4920815eb2c76551b70f26b9026
         return new Twig_Source("<div class=\"jumbotron\">
     <div class=\"container\">
         {% content \"welcome.htm\" %}
-
+            
     </div>
+    {% if user %}
+    <p>Hello {{ user.name }}</p>
+{% else %}
+  
+
+
+                <span class=\"omb_spanOr\">or</span>
+            </div>
+        </div>
+
+        <div class=\"row omb_row-sm-offset-3\">
+            <div class=\"col-xs-12 col-sm-6\">    
+                <form class=\"omb_loginForm\" action=\"\" autocomplete=\"off\" method=\"POST\">
+                    <div class=\"input-group\">
+                        <span class=\"input-group-addon\"><i class=\"fa fa-user\"></i></span>
+                        <input type=\"text\" class=\"form-control\" name=\"username\" placeholder=\"email address\">
+                    </div>
+                    <span class=\"help-block\"></span>
+                                        
+                    <div class=\"input-group\">
+                        <span class=\"input-group-addon\"><i class=\"fa fa-lock\"></i></span>
+                        <input  type=\"password\" class=\"form-control\" name=\"password\" placeholder=\"Password\">
+                    </div>
+                    <span class=\"help-block\">Password error</span>
+
+                    <button class=\"btn btn-lg btn-primary btn-block\" type=\"submit\">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class=\"row omb_row-sm-offset-3\">
+            <div class=\"col-xs-12 col-sm-3\">
+                <label class=\"checkbox\">
+                    <input type=\"checkbox\" value=\"remember-me\">Remember Me
+                </label>
+            </div>
+            <div class=\"col-xs-12 col-sm-3\">
+                <p class=\"omb_forgotPwd\">
+                    <a href=\"#\">Forgot password?</a>
+                </p>
+            </div>
+        </div>          
+    </div>
+<div class=\"container\">
     
+
+    <div class=\"omb_login\">
+        <h3 class=\"omb_authTitle\">Login or <a href=\"#\">Sign up</a></h3>
+        <div class=\"row omb_row-sm-offset-3 omb_socialButtons\">
+            <div class=\"col-xs-4 col-sm-2\">
+                <a href=\"#\" class=\"btn btn-lg btn-block omb_btn-facebook\">
+                    <i class=\"fa fa-facebook visible-xs\"></i>
+                    <span class=\"hidden-xs\">Facebook</span>
+                </a>
+            </div>
+            <div class=\"col-xs-4 col-sm-2\">
+                <a href=\"#\" class=\"btn btn-lg btn-block omb_btn-twitter\">
+                    <i class=\"fa fa-twitter visible-xs\"></i>
+                    <span class=\"hidden-xs\">Twitter</span>
+                </a>
+            </div>  
+            <div class=\"col-xs-4 col-sm-2\">
+                <a href=\"#\" class=\"btn btn-lg btn-block omb_btn-google\">
+                    <i class=\"fa fa-google-plus visible-xs\"></i>
+                    <span class=\"hidden-xs\">Google+</span>
+                </a>
+            </div>  
+        </div>
+
+        <div class=\"row omb_row-sm-offset-3 omb_loginOr\">
+            <div class=\"col-xs-12 col-sm-6\">
+                <hr class=\"omb_hrOr\">
+
+
+        </div>
+{% endif %}
 </div>
 
 <div class=\"container\">

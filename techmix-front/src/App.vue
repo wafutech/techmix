@@ -1,13 +1,39 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <CreateQuestion></CreateQuestion>
+    <QuestionsList v-bind:questions="questions"></QuestionsList>
   </div>
 </template>
 
 <script>
+import axios from 'axios';
+import QuestionsList from './components/QuestionsList'
+import CreateQuestion from './components/CreateQuestion'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components:
+  {
+  QuestionsList,
+  CreateQuestion
+  },
+  data(){
+            return{
+               
+        questions:{}
+               
+         }
+        },
+
+    mounted: function()
+  {
+ var  _this = this;
+  axios.get('http://localhost/techmix/apiv1/questions').then(function(response)
+  {
+  _this.questions = response.data;
+  console.log(_this.questions);
+  });
+  }
 }
 </script>
 

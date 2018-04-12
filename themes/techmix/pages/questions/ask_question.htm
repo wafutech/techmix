@@ -4,7 +4,9 @@ layout = "questions"
 description = "Ask Question Form"
 is_hidden = 0
 
-
+[session]
+security = "user"
+redirect = "login"
 ==
 <?php
 function onPostQuestion()
@@ -62,9 +64,9 @@ function onPostQuestion()
         </div>
        
     </div>
-		{% component 'session' %}
+		
 	</div>
-	</div>
+	</div>{% component 'session' %}
 
 	</div>
 

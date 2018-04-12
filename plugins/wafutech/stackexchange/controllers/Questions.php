@@ -11,7 +11,7 @@ use Validator;
 use Illuminate\Support\Facades\Input;
 use DB;
 use BackendAuth;
-use October\Rain\Database\ModelException; use RainLab\User\Facades\Auth
+use October\Rain\Database\ModelException; use RainLab\User\Facades\Auth;
 use RainLab\User\Classes\AuthManager\User as User;
 
 /**

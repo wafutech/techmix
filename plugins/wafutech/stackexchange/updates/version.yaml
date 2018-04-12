@@ -21,3 +21,6 @@
 1.0.6:
     - 'Created table wafutech_stackexchange_question_votes'
     - builder_table_create_wafutech_stackexchange_question_votes.php
+1.0.7:
+    - 'Updated table wafutech_stackexchange_questions'
+    - builder_table_update_wafutech_stackexchange_questions.php

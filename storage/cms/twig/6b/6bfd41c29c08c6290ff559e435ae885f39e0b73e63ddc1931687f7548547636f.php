@@ -20,71 +20,81 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
         <div class=\"container\"> 
            
         <div class=\"row row1\">
-            <ul class=\"largenav pull-right\">               
-                <li class=\"upper-links";
+            <ul class=\"largenav pull-right\"> 
+            <li class=\"upper-links";
         // line 6
-        if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "about")) {
+        if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "login")) {
             echo "active ";
         }
         echo "\">
               <a href=\"";
         // line 7
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("login");
+        echo "\" class=\"links\">Login or SignUp</a>              
+                <li class=\"upper-links";
+        // line 8
+        if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "about")) {
+            echo "active ";
+        }
+        echo "\">
+              <a href=\"";
+        // line 9
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("about");
         echo "\" class=\"links\">About</a>
               </li>
                 <li class=\"upper-links";
-        // line 9
+        // line 11
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "posts")) {
             echo "active ";
         }
         echo "\">
               <a href=\"";
-        // line 10
+        // line 12
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("freelancer/findwork");
         echo "\" class=\"links\">Contact</a>
               </li>
               <li class=\"upper-links";
-        // line 12
+        // line 14
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "posts")) {
             echo "active ";
         }
         echo "\">
               <a href=\"";
-        // line 13
+        // line 15
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("freelancer/postwork");
         echo "\" class=\"links\">Post Work</a>
               </li>          
 
                 <li class=\"upper-links";
-        // line 16
+        // line 18
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "posts")) {
             echo "active ";
         }
         echo "\">
               <a href=\"";
-        // line 17
+        // line 19
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("blog/posts");
         echo "\" class=\"links\">Blog</a>
               </li>
               <li class=\"upper-links";
-        // line 19
+        // line 21
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "store")) {
             echo "active ";
         }
         echo "\">
               <a href=\"";
-        // line 20
+        // line 22
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("store/home");
         echo "\" class=\"links\">Users</a>
               </li>
               <li class=\"upper-links";
-        // line 22
+        // line 24
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "store")) {
             echo "active ";
         }
         echo "\">
               <a href=\"";
-        // line 23
+        // line 25
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("store/home");
         echo "\" class=\"links\">Top Developers</a>
               </li>
@@ -106,7 +116,7 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
         <div class=\"row row2\">
             <div class=\"col-sm-2\">
                 <h3 style=\"margin:0px;\"><span class=\"smallnav menu\" onclick=\"openNav()\"><img src=\"";
-        // line 42
+        // line 44
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/images/wafutech.png");
         echo "\" type=\"image/png\" alt=\"LOGO\" width=\"60\" height=\"65\"></span></h3>
                 <p class=\"motto\">Technology Reigns</p>
@@ -147,80 +157,80 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
       <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">
       <ul class=\"nav navbar-nav\">
         <li class=\"";
-        // line 80
+        // line 82
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "about")) {
             echo "active ";
         }
         echo "\">
       <a href=\"";
-        // line 81
+        // line 83
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("about");
         echo "\">How it Works</a>
   </li>
   <li class=\"";
-        // line 83
+        // line 85
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "questions")) {
             echo "active ";
         }
         echo "\">
               <a href=\"";
-        // line 84
+        // line 86
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("questions/questions");
         echo "\" class=\"links\">Questions</a>
               </li>
 
     <li class=\"";
-        // line 87
+        // line 89
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "freelance")) {
             echo "active ";
         }
         echo "\">
       <a href=\"";
-        // line 88
+        // line 90
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("freelance/freelance");
         echo "\">Programming Jobs</a>
   </li>
   <li class=\"";
-        // line 90
+        // line 92
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "freelance")) {
             echo "active ";
         }
         echo "\">
       <a href=\"";
-        // line 91
+        // line 93
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("freelance/freelance");
         echo "\">Software Store</a>
   </li>
   <li class=\"";
-        // line 93
+        // line 95
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "freelance")) {
             echo "active ";
         }
         echo "\">
       <a href=\"";
-        // line 94
+        // line 96
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("freelance/freelance");
         echo "\">Blogging</a>
   </li>
   <li class=\"";
-        // line 96
+        // line 98
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "freelance")) {
             echo "active ";
         }
         echo "\">
       <a href=\"";
-        // line 97
+        // line 99
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("freelance/freelance");
         echo "\">Become A programmer</a>
   </li>
    <li class=\"";
-        // line 99
+        // line 101
         if ((twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), ($context["this"] ?? null), "page", array()), "id", array()) == "freelance")) {
             echo "active ";
         }
         echo "\">
       <a href=\"";
-        // line 100
+        // line 102
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("freelance/freelance");
         echo "\">Get Social</a>
   </li>
@@ -231,7 +241,17 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
       <ul class=\"nav navbar-nav navbar-right\">
       
         <li class=\"dropdown\">
-          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><b>Login or Signup</b> <span class=\"caret\"></span></a>
+          ";
+        // line 111
+        if (($context["user"] ?? null)) {
+            // line 112
+            echo "    <p>Hello ";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), ($context["user"] ?? null), "name", array()), "html", null, true);
+            echo " <a a data-request=\"onLogout\" data-request-data=\"redirect: '/'\">Logout</a></p>
+";
+        } else {
+            // line 114
+            echo "<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><b>Login or Signup</b> <span class=\"caret\"></span></a>
       <ul id=\"login-dp\" class=\"dropdown-menu\">
         <li>
            <div class=\"row\">
@@ -268,6 +288,10 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
            </div>
         </li>
       </ul>
+      ";
+        }
+        // line 152
+        echo "          
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -287,7 +311,7 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
 
     public function getDebugInfo()
     {
-        return array (  224 => 100,  218 => 99,  213 => 97,  207 => 96,  202 => 94,  196 => 93,  191 => 91,  185 => 90,  180 => 88,  174 => 87,  168 => 84,  162 => 83,  157 => 81,  151 => 80,  110 => 42,  88 => 23,  82 => 22,  77 => 20,  71 => 19,  66 => 17,  60 => 16,  54 => 13,  48 => 12,  43 => 10,  37 => 9,  32 => 7,  26 => 6,  19 => 1,);
+        return array (  294 => 152,  254 => 114,  248 => 112,  246 => 111,  234 => 102,  228 => 101,  223 => 99,  217 => 98,  212 => 96,  206 => 95,  201 => 93,  195 => 92,  190 => 90,  184 => 89,  178 => 86,  172 => 85,  167 => 83,  161 => 82,  120 => 44,  98 => 25,  92 => 24,  87 => 22,  81 => 21,  76 => 19,  70 => 18,  64 => 15,  58 => 14,  53 => 12,  47 => 11,  42 => 9,  36 => 8,  32 => 7,  26 => 6,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -296,7 +320,9 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
         <div class=\"container\"> 
            
         <div class=\"row row1\">
-            <ul class=\"largenav pull-right\">               
+            <ul class=\"largenav pull-right\"> 
+            <li class=\"upper-links{% if( this.page.id == 'login') %}active {% endif %}\">
+              <a href=\"{{ 'login'|page }}\" class=\"links\">Login or SignUp</a>              
                 <li class=\"upper-links{% if( this.page.id == 'about') %}active {% endif %}\">
               <a href=\"{{ 'about'|page }}\" class=\"links\">About</a>
               </li>
@@ -400,7 +426,10 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
       <ul class=\"nav navbar-nav navbar-right\">
       
         <li class=\"dropdown\">
-          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><b>Login or Signup</b> <span class=\"caret\"></span></a>
+          {% if user %}
+    <p>Hello {{ user.name }} <a a data-request=\"onLogout\" data-request-data=\"redirect: '/'\">Logout</a></p>
+{% else %}
+<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><b>Login or Signup</b> <span class=\"caret\"></span></a>
       <ul id=\"login-dp\" class=\"dropdown-menu\">
         <li>
            <div class=\"row\">
@@ -437,6 +466,8 @@ class __TwigTemplate_d2dea208919f939895a8ebeb2f337835df5df2706e886d4ce248d3c5cc1
            </div>
         </li>
       </ul>
+      {% endif %}
+          
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->

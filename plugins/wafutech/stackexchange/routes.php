@@ -1,6 +1,10 @@
 <?php
 use Wafutech\Stackexchange\Controllers\Tags;
 use Wafutech\Stackexchange\Models\QuestionTag as QuestionTag;
+use Wafutech\Stackexchange\Models\Answer as Answer;
+use Rainlab\User\Models\User as ExtUser;
+
+
 //Pass the route to index action in Tags Controller and retrive all question tags;
 Route::get('api/tags','Wafutech\Stackexchange\Controllers\Tags@index');
 
@@ -73,11 +77,14 @@ Route::get('apiv1/question/votes/{id}',
 /*-------------------------
 * STACK QUESTIONS ANSWERS API ROUTES
 --------------------------*/
-
+//List answers
+Route::get('apiv1/answers',function(){
+$answers = ExtUser::all();
+return $answers;
+});
 //Post new answer
 Route::post('apiv1/question/answers',
 	'Wafutech\Stackexchange\Controllers\Answers@newAnswer');
-
 //Update answer
 
 Route::put('apiv1/question/answers/{id}',
