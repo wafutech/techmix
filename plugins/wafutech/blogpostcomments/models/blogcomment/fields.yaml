@@ -1,0 +1,7 @@
+fields:
+    textarea1:
+        label: Comment
+        size: large
+        span: auto
+        placeholder: 'Enter Your comment or oppinion'
+        type: textarea

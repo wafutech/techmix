@@ -1,0 +1,11 @@
+plugin:
+    name: 'wafutech.ranking::lang.plugin.name'
+    description: 'wafutech.ranking::lang.plugin.description'
+    author: wafutech
+    icon: oc-icon-graduation-cap
+    homepage: ''
+navigation:
+    main-menu-item2:
+        label: 'Menu Item'
+        icon: icon-life-ring
+        url: /

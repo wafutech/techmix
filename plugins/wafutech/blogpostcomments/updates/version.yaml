@@ -1,0 +1,7 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table wafutech_blogpostcomments_'
+    - builder_table_create_wafutech_blogpostcomments_.php
+    - Modify blopostcomments table adding foreign key contraints
+

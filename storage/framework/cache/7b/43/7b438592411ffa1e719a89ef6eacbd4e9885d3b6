@@ -1,0 +1,53 @@
+1528305178a:1:{s:17:"share_buttons.htm";a:6:{s:8:"fileName";s:17:"share_buttons.htm";s:7:"content";s:250:"<div class="panel panel">
+	<div class="panel-body">
+		
+		<a href="#" class="btn btn-default">
+			Share
+		</a>
+	
+	<a href="#" class="btn btn-warning">
+			Hatoff
+		</a>
+
+	<a href="#" class="btn btn-info">
+			Follow the Author
+		</a>
+	
+	
+	</div>
+</div>
+";s:5:"mtime";i:1521529337;s:6:"markup";s:249:"<div class="panel panel">
+	<div class="panel-body">
+		
+		<a href="#" class="btn btn-default">
+			Share
+		</a>
+	
+	<a href="#" class="btn btn-warning">
+			Hatoff
+		</a>
+
+	<a href="#" class="btn btn-info">
+			Follow the Author
+		</a>
+	
+	
+	</div>
+</div>";s:4:"code";N;s:12:"parsedMarkup";s:249:"<div class="panel panel">
+	<div class="panel-body">
+		
+		<a href="#" class="btn btn-default">
+			Share
+		</a>
+	
+	<a href="#" class="btn btn-warning">
+			Hatoff
+		</a>
+
+	<a href="#" class="btn btn-info">
+			Follow the Author
+		</a>
+	
+	
+	</div>
+</div>";}}

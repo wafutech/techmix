@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Rank Privillages Controller
+
+# Model Form Field configuration
+form: $/wafutech/ranking/models/rankprivillagescontroller/fields.yaml
+
+# Model Class name
+modelClass: Wafutech\Ranking\Models\RankPrivillagesController
+
+# Default redirect location
+defaultRedirect: wafutech/ranking/rankprivillagescontroller
+
+# Create page
+create:
+    title: Create Rank Privillages Controller
+    redirect: wafutech/ranking/rankprivillagescontroller/update/:id
+    redirectClose: wafutech/ranking/rankprivillagescontroller
+
+# Update page
+update:
+    title: Edit Rank Privillages Controller
+    redirect: wafutech/ranking/rankprivillagescontroller
+    redirectClose: wafutech/ranking/rankprivillagescontroller
+
+# Preview page
+preview:
+    title: Preview Rank Privillages Controller

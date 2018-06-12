@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Rps Type Controller
+
+# Model Form Field configuration
+form: $/wafutech/ranking/models/rpstypecontroller/fields.yaml
+
+# Model Class name
+modelClass: Wafutech\Ranking\Models\RpsTypeController
+
+# Default redirect location
+defaultRedirect: wafutech/ranking/rpstypecontroller
+
+# Create page
+create:
+    title: Create Rps Type Controller
+    redirect: wafutech/ranking/rpstypecontroller/update/:id
+    redirectClose: wafutech/ranking/rpstypecontroller
+
+# Update page
+update:
+    title: Edit Rps Type Controller
+    redirect: wafutech/ranking/rpstypecontroller
+    redirectClose: wafutech/ranking/rpstypecontroller
+
+# Preview page
+preview:
+    title: Preview Rps Type Controller

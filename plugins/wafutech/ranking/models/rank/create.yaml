@@ -1,0 +1,19 @@
+fields:
+    rank:
+        label: Rank
+        span: auto
+        placeholder: 'Enter Rank'
+        required: 1
+        type: text
+    description:
+        label: Description
+        size: ''
+        span: auto
+        placeholder: 'Rank Description'
+        required: 1
+        type: textarea
+    rps_points:
+        label: 'RPS Points'
+        span: auto
+        default: '0'
+        type: number

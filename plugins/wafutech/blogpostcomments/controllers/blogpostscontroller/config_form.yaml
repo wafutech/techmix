@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Blog Posts Controller
+
+# Model Form Field configuration
+form: $/wafutech/blogpostcomments/models/blogpostscontroller/fields.yaml
+
+# Model Class name
+modelClass: Wafutech\Blogpostcomments\Models\BlogPostsController
+
+# Default redirect location
+defaultRedirect: wafutech/blogpostcomments/blogpostscontroller
+
+# Create page
+create:
+    title: Create Blog Posts Controller
+    redirect: wafutech/blogpostcomments/blogpostscontroller/update/:id
+    redirectClose: wafutech/blogpostcomments/blogpostscontroller
+
+# Update page
+update:
+    title: Edit Blog Posts Controller
+    redirect: wafutech/blogpostcomments/blogpostscontroller
+    redirectClose: wafutech/blogpostcomments/blogpostscontroller
+
+# Preview page
+preview:
+    title: Preview Blog Posts Controller

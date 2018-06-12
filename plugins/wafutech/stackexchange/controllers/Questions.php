@@ -2,17 +2,21 @@
 
 use BackendMenu;
 use Backend\Classes\Controller;
-use Wafutech\Stackexchange\Models\Question as Question;
-use Wafutech\Stackexchange\Models\QuestionTag as QuestionTag;
-use Wafutech\Stackexchange\Models\QuestionVote as QuestionVote;
-
-use Illuminate\Http\Request as Request;
+use Wafutech\Stackexchange\Models\Question;
+use Wafutech\Stackexchange\Models\QuestionTag;
+use Wafutech\Stackexchange\Models\QuestionVote;
+use Illuminate\Http\Request;
 use Validator;
 use Illuminate\Support\Facades\Input;
 use DB;
 use BackendAuth;
-use October\Rain\Database\ModelException; use RainLab\User\Facades\Auth;
-use RainLab\User\Classes\AuthManager\User as User;
+use October\Rain\Database\ModelException; 
+use RainLab\User\Facades\Auth;
+use RainLab\User\Classes\AuthManager\User;
+use Event;
+use Wafutech\Stackexchange\Classes\Events\QuestionVotedEvent;
+use JWTAuth;
+
 
 /**
  * Questions Back-end Controller
@@ -39,6 +43,8 @@ class Questions extends Controller
 
     public function index()
     {
+        //$user = JWTAuth::authenticate();
+        //return $user;
         $questions = DB::table('wafutech_stackexchange_questions')
         ->join('wafutech_stackexchange_question_categories','wafutech_stackexchange_questions.category_id','wafutech_stackexchange_questions.category_id','wafutech_stackexchange_question_categories.id')
         ->join('wafutech_stackexchange_question_tags','wafutech_stackexchange_questions.id','wafutech_stackexchange_question_tags.question_id','wafutech_stackexchange_questions.id')
@@ -132,20 +138,26 @@ class Questions extends Controller
 
     //Vote on questions
 
-    public function questionVote($id)
+    public function questionVote(Request $request, $id)
     {
-       $votes = 1;
-        $alreadyVoted = QuestionVote::where(['question_id',$id,'user_id',1])->first();
+        $alreadyVoted = QuestionVote::where('question_id',$id)
+        ->where('user_id',3)->first();
+
+        
         if($alreadyVoted)
         {
             return 'You already voted on this question';
         }
-
         $vote = new QuestionVote;
         $vote->question_id = $id;
-        $vote->user_id = 1;
-        $vote->vote = $votes;
+        $vote->user_id = 7;
+        $vote->vote = $request->vote;
         $vote->save();
+        //Fire the event that will assign reputation points to the author of the question if the vote is an upvote
+        $url = $request->url();
+        Event::fire('wafutech.stackexchange.QuestionVoteEvent', [$question=1, $vote=1, $voter=7, $url]);
+
+        //Event::fire(QuestionVotedEvent($question=$vote->question_id,$vote=$vote->vote,$voter=3,$url));
 
         return 'Voting Successful';
 

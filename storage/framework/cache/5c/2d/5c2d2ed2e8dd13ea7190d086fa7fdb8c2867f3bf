@@ -1,0 +1,186 @@
+1528305106a:1:{s:18:"account/signin.htm";a:5:{s:8:"fileName";s:18:"account/signin.htm";s:7:"content";s:3521:"<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<div class="row omb_row-sm-offset-3">
+    <div data-request="onSignin" class="col-xs-12 col-sm-6"> 
+        <h3 class="omb_authTitle">Login or <a href="#">Sign up</a></h3>
+
+        <div class="row omb_row-sm-offset-3 omb_socialButtons">
+            <div class="col-xs-4 col-sm-2">
+                <a href="#" class="btn btn-lg btn-block omb_btn-facebook">
+                    <i class="fa fa-facebook visible-xs"></i>
+                    <span class="hidden-xs">Facebook</span>
+                </a>
+            </div>
+            <div class="col-xs-4 col-sm-2">
+                <a href="#" class="btn btn-lg btn-block omb_btn-twitter">
+                    <i class="fa fa-twitter visible-xs"></i>
+                    <span class="hidden-xs">Twitter</span>
+                </a>
+            </div>  
+            <div class="col-xs-4 col-sm-2">
+                <a href="#" class="btn btn-lg btn-block omb_btn-google">
+                    <i class="fa fa-google-plus visible-xs"></i>
+                    <span class="hidden-xs">Google+</span>
+                </a>
+            </div>  
+        </div>
+<form data-request="onSignin" class="omb_loginForm"  autocomplete="off">
+    <div class="form-group">
+        <label for="userSigninLogin">{{ loginAttributeLabel }}</label>
+
+        <input
+            name="login"
+            type="text"
+            class="form-control"
+            id="userSigninLogin"
+            placeholder="Enter your {{ loginAttributeLabel|lower }}" />
+        <span class="help-block"></span>
+
+    </div>
+
+    <div class="form-group">
+        <label for="userSigninPassword">Password</label>
+        <input
+            name="password"
+            type="password"
+            class="form-control"
+            id="userSigninPassword"
+            placeholder="Enter your password" />
+    </div>
+    <span class="help-block">Password error</span>
+    <div class="row omb_row-sm-offset-3">
+            <div class="col-xs-12 col-sm-3">
+                <label class="checkbox">
+                    <input type="checkbox" value="remember-me">Remember Me
+                </label>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <p class="omb_forgotPwd">
+                    <a href="#">Forgot password?</a>
+                </p>
+            </div>
+                       
+        </div>
+        
+{% for name, link in social_login_links %}
+<a href="{{ link }}">{{ name }}</a>
+{% endfor %}
+    <button type="submit" class="btn btn-lg btn-info btn-block">Sign in</button>
+</form>
+
+<form id="login" data-request="onSignin">
+    <div class="form-group">
+        <label for="userSigninEmail">Email</label>
+        <input name="email" type="email" class="form-control" id="userSigninEmail" placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+        <label for="userSigninPassword">Password</label>
+        <input name="password" type="password" class="form-control" id="userSigninPassword" placeholder="Enter your password">
+    </div>
+
+    <p align="right">
+        or sign in with
+        {% for name, link in social_login_links %}
+            <a href="{{ link }}" class='login {{ name|lower }}'><i class="fa fa-2 fa-{{ name|lower }}"></i></a>
+        {% endfor %}
+    </p>
+
+    <button type="submit" class="btn btn-default">Sign in</button>
+</form>
+    </div>
+
+</div>
+
+
+";s:5:"mtime";i:1523463734;s:6:"markup";s:3515:"<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<div class="row omb_row-sm-offset-3">
+    <div data-request="onSignin" class="col-xs-12 col-sm-6"> 
+        <h3 class="omb_authTitle">Login or <a href="#">Sign up</a></h3>
+
+        <div class="row omb_row-sm-offset-3 omb_socialButtons">
+            <div class="col-xs-4 col-sm-2">
+                <a href="#" class="btn btn-lg btn-block omb_btn-facebook">
+                    <i class="fa fa-facebook visible-xs"></i>
+                    <span class="hidden-xs">Facebook</span>
+                </a>
+            </div>
+            <div class="col-xs-4 col-sm-2">
+                <a href="#" class="btn btn-lg btn-block omb_btn-twitter">
+                    <i class="fa fa-twitter visible-xs"></i>
+                    <span class="hidden-xs">Twitter</span>
+                </a>
+            </div>  
+            <div class="col-xs-4 col-sm-2">
+                <a href="#" class="btn btn-lg btn-block omb_btn-google">
+                    <i class="fa fa-google-plus visible-xs"></i>
+                    <span class="hidden-xs">Google+</span>
+                </a>
+            </div>  
+        </div>
+<form data-request="onSignin" class="omb_loginForm"  autocomplete="off">
+    <div class="form-group">
+        <label for="userSigninLogin">{{ loginAttributeLabel }}</label>
+
+        <input
+            name="login"
+            type="text"
+            class="form-control"
+            id="userSigninLogin"
+            placeholder="Enter your {{ loginAttributeLabel|lower }}" />
+        <span class="help-block"></span>
+
+    </div>
+
+    <div class="form-group">
+        <label for="userSigninPassword">Password</label>
+        <input
+            name="password"
+            type="password"
+            class="form-control"
+            id="userSigninPassword"
+            placeholder="Enter your password" />
+    </div>
+    <span class="help-block">Password error</span>
+    <div class="row omb_row-sm-offset-3">
+            <div class="col-xs-12 col-sm-3">
+                <label class="checkbox">
+                    <input type="checkbox" value="remember-me">Remember Me
+                </label>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <p class="omb_forgotPwd">
+                    <a href="#">Forgot password?</a>
+                </p>
+            </div>
+                       
+        </div>
+        
+{% for name, link in social_login_links %}
+<a href="{{ link }}">{{ name }}</a>
+{% endfor %}
+    <button type="submit" class="btn btn-lg btn-info btn-block">Sign in</button>
+</form>
+
+<form id="login" data-request="onSignin">
+    <div class="form-group">
+        <label for="userSigninEmail">Email</label>
+        <input name="email" type="email" class="form-control" id="userSigninEmail" placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+        <label for="userSigninPassword">Password</label>
+        <input name="password" type="password" class="form-control" id="userSigninPassword" placeholder="Enter your password">
+    </div>
+
+    <p align="right">
+        or sign in with
+        {% for name, link in social_login_links %}
+            <a href="{{ link }}" class='login {{ name|lower }}'><i class="fa fa-2 fa-{{ name|lower }}"></i></a>
+        {% endfor %}
+    </p>
+
+    <button type="submit" class="btn btn-default">Sign in</button>
+</form>
+    </div>
+
+</div>";s:4:"code";N;}}

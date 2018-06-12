@@ -28,5 +28,5 @@ class QuestionVote extends Model
 
     protected $fillable = ['question_id','user_id','vote'];
 
-     //public $belongsTo = ['user'=>'RainLab\User\Models\User','question'=>'Wafutech\Stackexchange\Models\QuestionVote'];
+     public $belongsTo = ['user'=>'RainLab\User\Models\User','question'=>'Wafutech\Stackexchange\Models\Question'];
 }

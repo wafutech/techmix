@@ -1,0 +1,29 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table wafutech_ranking_ranks'
+    - builder_table_create_wafutech_ranking_ranks.php
+1.0.3:
+    - 'Created table wafutech_ranking_rank_user'
+    - builder_table_create_wafutech_ranking_rank_user.php
+1.0.4:
+    - 'Created table wafutech_ranking_rank_privillages'
+    - builder_table_create_wafutech_ranking_rank_privillages.php
+1.0.5:
+    - 'Created table wafutech_ranking_rank_with_privillages'
+    - builder_table_create_wafutech_ranking_rank_with_privillages.php
+1.0.6:
+    - 'Created table wafutech_ranking_rps'
+    - builder_table_create_wafutech_ranking_rps.php
+1.0.7:
+    - 'Created table wafutech_ranking_user_rps'
+    - builder_table_create_wafutech_ranking_user_rps.php
+1.0.8:
+    - 'Created table wafutech_ranking_rps_types'
+    - builder_table_create_wafutech_ranking_rps_types.php
+1.0.9:
+    - 'Created table wafutech_ranking_user_skill_ranks'
+    - builder_table_create_wafutech_ranking_user_skill_ranks.php
+1.0.10:
+    - 'Created table wafutech_ranking_user_skill_scores'
+    - builder_table_create_wafutech_ranking_user_skill_scores.php

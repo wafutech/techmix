@@ -1,0 +1,14 @@
+columns:
+    rank:
+        label: Rank
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: Description
+        type: text
+        searchable: true
+    rps_points:
+        label: 'RPS Points'
+        type: number
+        searchable: true

@@ -1,0 +1,6 @@
+plugin:
+    name: 'wafutech.blogpostcomments::lang.plugin.name'
+    description: 'wafutech.blogpostcomments::lang.plugin.description'
+    author: wafutech
+    icon: oc-icon-comments-o
+    homepage: ''

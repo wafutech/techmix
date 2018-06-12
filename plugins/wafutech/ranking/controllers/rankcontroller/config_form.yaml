@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Rank Controller
+
+# Model Form Field configuration
+form: $/wafutech/ranking/models/rankcontroller/fields.yaml
+
+# Model Class name
+modelClass: Wafutech\Ranking\Models\RankController
+
+# Default redirect location
+defaultRedirect: wafutech/ranking/rankcontroller
+
+# Create page
+create:
+    title: Create Rank Controller
+    redirect: wafutech/ranking/rankcontroller/update/:id
+    redirectClose: wafutech/ranking/rankcontroller
+
+# Update page
+update:
+    title: Edit Rank Controller
+    redirect: wafutech/ranking/rankcontroller
+    redirectClose: wafutech/ranking/rankcontroller
+
+# Preview page
+preview:
+    title: Preview Rank Controller

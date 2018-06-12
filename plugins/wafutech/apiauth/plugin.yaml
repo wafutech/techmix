@@ -1,6 +1,0 @@
-plugin:
-    name: 'wafutech.apiauth::lang.plugin.name'
-    description: 'wafutech.apiauth::lang.plugin.description'
-    author: wafutech
-    icon: oc-icon-adjust
-    homepage: ''
